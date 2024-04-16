@@ -114,6 +114,25 @@
                                 android:paddingRight="150dp"
                                 android:textSize="18dp"
                                 android:textColor="@color/black"
+                                android:text="Nghỉ phép"/>
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:paddingLeft="150dp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="150dp"
+                                android:textSize="18dp"
+                                android:textColor="@color/black"
                                 android:text="Điểm danh"/>
                             <Switch
                                 android:layout_width="wrap_content"
@@ -133,7 +152,25 @@
                                 android:paddingRight="150dp"
                                 android:textSize="18dp"
                                 android:textColor="@color/black"
-                                android:text="Nghỉ phép"/>
+                                android:text="Vị trí"/>
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:paddingLeft="150dp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textColor="@color/black"
+                                android:text="Nhận diện khôn mặt"/>
                             <Switch
                                 android:layout_width="wrap_content"
                                 android:paddingLeft="150dp"
