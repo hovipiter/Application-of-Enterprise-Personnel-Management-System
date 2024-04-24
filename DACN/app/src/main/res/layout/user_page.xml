@@ -118,7 +118,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageViewDateofBirth"
@@ -135,7 +135,7 @@
                                 android:id="@+id/textView6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Date of birth"
+                                android:text="Ngày sinh"
                                 android:textColor="@color/black"
                                 android:paddingLeft="50dp"
                                 android:layout_gravity="center_vertical"
@@ -146,7 +146,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageView4"
@@ -174,7 +174,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageView9"
@@ -191,7 +191,7 @@
                                 android:id="@+id/textView8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Phone number"
+                                android:text="Số điện thoại"
                                 android:textColor="@color/black"
                                 android:paddingLeft="50dp"
                                 android:layout_gravity="center_vertical"
@@ -202,7 +202,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageView3"
@@ -231,7 +231,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageView5"
@@ -259,7 +259,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageView7"
@@ -296,7 +296,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageView8"
@@ -324,7 +324,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageView10"
@@ -352,7 +352,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="25dp"
                             android:layout_marginRight="25dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
                             <ImageView
                                 android:id="@+id/imageView11"
@@ -384,12 +384,13 @@
                             android:gravity="center"
                             android:orientation="horizontal">
                             <Button
+                                android:id="@+id/btnEditUser"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:paddingHorizontal="55dp"
                                 android:paddingLeft="0dp"
-                                android:text="Edit profile"
+                                android:text="Chỉnh sửa"
                                 android:backgroundTint="@color/teal" />
                         </LinearLayout>
                         <LinearLayout
@@ -401,12 +402,13 @@
                             android:gravity="center"
                             android:orientation="horizontal">
                             <Button
+                                android:id="@+id/btnlogout"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:paddingHorizontal="70dp"
                                 android:paddingLeft="0dp"
-                                android:text="Home"
+                                android:text="Đăng xuất"
                                 android:backgroundTint="@color/teal" />
                         </LinearLayout>
                     </LinearLayout>

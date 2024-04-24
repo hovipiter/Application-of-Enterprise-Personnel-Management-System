@@ -98,19 +98,9 @@
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
                             android:orientation="horizontal">
+
                             <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:text="My task"
-                                android:backgroundTint="@color/silver"
-                                android:textColor="@color/black"
-                                android:textSize="12sp" />
-                            <Space
-                                android:layout_width="15dp"
-                                android:layout_height="15dp"
-                                />
-                            <Button
+                                android:id="@+id/btnNewtask"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -119,10 +109,7 @@
                                 android:backgroundTint="@color/silver"
                                 android:textSize="12sp"
                                 />
-                            <Space
-                                android:layout_width="15dp"
-                                android:layout_height="15dp"
-                                android:layout_weight="4"/>
+
                         </LinearLayout>
 
                         <HorizontalScrollView

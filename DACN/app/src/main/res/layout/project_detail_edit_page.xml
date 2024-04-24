@@ -92,11 +92,10 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
-                        <EditText
+                        <TextView
                             android:id="@+id/tv_title_detail_project"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/no_underline_for_edt"
                             android:text="Tên project"
                             android:textStyle="bold"
                             android:layout_marginRight="50dp"
@@ -171,7 +170,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:textSize="20dp"
                                 android:textColor="@color/red"/>
-                            <EditText
+                            <TextView
                                 android:id="@+id/timeleft_detail_project"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -237,7 +236,7 @@
                                 android:textSize="20sp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginLeft="10dp"/>
-                            <TextView
+                            <EditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="      Đây là dự án xây dựng một hệ thống quản lý nhân viên"
@@ -245,22 +244,25 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_marginLeft="10dp"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Nhiệm vụ cần làm"
-                                android:textSize="20sp"
-                                android:padding="10dp"
-                                android:background="#daa3af"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginLeft="10dp"/>
+
                         </LinearLayout>
+
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Lưu"
+                            android:layout_gravity="right"
                             android:layout_marginRight="10dp"
-                            android:layout_gravity="right"/>
+                            android:text="Lưu" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#daa3af"
+                            android:padding="10dp"
+                            android:text="Nhiệm vụ cần làm"
+                            android:textSize="20sp" />
                     </LinearLayout>
                 </ScrollView>
             </androidx.constraintlayout.widget.ConstraintLayout>

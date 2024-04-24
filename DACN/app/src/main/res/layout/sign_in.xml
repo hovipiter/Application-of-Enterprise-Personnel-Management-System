@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Sign in"
+            android:text="Đăng nhập"
             android:textColor="@color/black"
             android:textSize="28dp"
             android:layout_marginBottom="22dp"
@@ -31,7 +31,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="Tên đăng nhập"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:background="@drawable/rounded_corner"
@@ -43,7 +43,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="Mật khẩu"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:background="@drawable/rounded_corner"
@@ -63,19 +63,13 @@
             android:id="@+id/sign_in_button"
             android:padding="12dp"/>
         <TextView
+            android:id="@+id/tvforgotpass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forgot password"
+            android:text="Quên mật khẩu"
             android:textColor="@color/black"
             android:textSize="16dp"
             android:layout_marginTop="32dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reset password"
-            android:textColor="@color/black"
-            android:textSize="16dp"
-            android:layout_marginTop="8dp"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,7 +1,10 @@
 package com.example.dacn;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,6 +15,7 @@ import java.util.List;
 
 public class forum_page extends AppCompatActivity {
     private RecyclerView forumRecycleView;
+    Button new_forum;
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
@@ -29,6 +33,15 @@ public class forum_page extends AppCompatActivity {
         ForumAdapter forumAdapter = new ForumAdapter(forumList);
         forumRecycleView.setAdapter(forumAdapter);
         forumRecycleView.setLayoutManager(layoutManager);
+
+        new_forum = findViewById(R.id.btnNewForum);
+        new_forum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (forum_page.this, new_forum.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

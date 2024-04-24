@@ -1,21 +1,30 @@
 package com.example.dacn;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     ImageView  chamcong, salary, nghiphep, contract, department, forum, chinhsach;
     CardView project;
+    AppCompatImageView imgbtnnotification, imgviewuser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainactivity);
 
+        findviewbyid();
+        openObject();
+
+    }
+
+    void findviewbyid(){
         project =  (CardView) findViewById(R.id.cardviewProject);
         chamcong =  (ImageView) findViewById(R.id.imgChamCong);
         salary = (ImageView) findViewById(R.id.imgBangLuong);
@@ -24,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
         department = (ImageView) findViewById(R.id.imgPhongBan);
         forum = (ImageView) findViewById(R.id.imgForum);
         chinhsach = (ImageView) findViewById(R.id.imgChinhSach);
-
+        imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
+        imgviewuser = (AppCompatImageView) findViewById(R.id.ib_user);
+    }
+    void openObject(){
         project.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +76,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, forum_page.class);
+                startActivity(intent);
+            }
+        });
+        imgbtnnotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, notification_page.class);
+                startActivity(intent);
+            }
+        });
+        imgviewuser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, user_page.class);
+                startActivity(intent);
+            }
+        });
+
+        department.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, apartment_page.class);
                 startActivity(intent);
             }
         });
