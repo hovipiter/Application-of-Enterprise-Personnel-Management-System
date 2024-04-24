@@ -11,6 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DACN"
         tools:targetApi="31">
+        <activity android:name=".project_page"/>
+        <activity android:name=".nghiphep_page"/>
+        <activity android:name=".contract_page"/>
+        <activity android:name=".chamcong_page"/>
+        <activity android:name=".apartment_page"/>
+        <activity android:name=".salary_page"/>
+        <activity android:name=".forum_page"/>
+        <activity android:name=".notification_page"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

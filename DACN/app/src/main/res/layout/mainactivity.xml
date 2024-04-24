@@ -100,6 +100,7 @@
             android:background="@color/white"
             >
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewProject"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="12dp"
@@ -116,12 +117,14 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
+                        android:id="@+id/imgProject"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/baseline_project_24"
                         android:layout_gravity="center_horizontal"
                         />
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Project"
@@ -151,11 +154,13 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
+                        android:id="@+id/imgChamCong"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/baseline_note_alt_24"
                         android:layout_gravity="center_horizontal"/>
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Chấm công"
@@ -184,11 +189,13 @@
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
+                        android:id="@+id/imgNghiPhep"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/baseline_calendar_month_24"
                         android:layout_gravity="center_horizontal"/>
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Nghỉ phép"
@@ -217,11 +224,13 @@
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
+                        android:id="@+id/imgBangLuong"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/baseline_monetization_on_24"
                         android:layout_gravity="center_horizontal"/>
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Bảng lương"
@@ -249,6 +258,7 @@
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
+                        android:id="@+id/imgPhongBan"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/baseline_apartment_24"
@@ -281,11 +291,13 @@
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
+                        android:id="@+id/imgHopDong"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/baseline_perm_contact_calendar_24"
                         android:layout_gravity="center_horizontal"/>
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hợp đồng"
@@ -313,6 +325,7 @@
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
+                        android:id="@+id/imgForum"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/baseline_newspaper_24"
@@ -320,7 +333,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Social"
+                        android:text="Diễn đàn"
                         android:textColor="@color/teal"
                         android:layout_gravity="center_horizontal"
                         android:textSize="18dp"
@@ -345,6 +358,7 @@
                     android:gravity="center"
                     android:orientation="vertical">
                     <ImageView
+                        android:id="@+id/imgChinhSach"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/baseline_assured_workload_24"

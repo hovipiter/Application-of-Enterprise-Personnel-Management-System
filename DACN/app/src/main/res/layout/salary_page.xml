@@ -202,11 +202,6 @@
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
                             android:paddingTop="15dp">
-                            <com.github.mikephil.charting.charts.LineChart
-                                android:id="@+id/line_chart"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                tools:ignore="MissingClass" />
                         </LinearLayout>
                     </LinearLayout>
                 </ScrollView>
