@@ -52,7 +52,6 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/mainactivity.xml">
         <config>
-          <state>Landscape</state>
           <theme>@style/Theme.DACN</theme>
         </config>
       </layout>
@@ -63,7 +62,6 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/nghiphep_page.xml">
         <config>
-          <state>Landscape</state>
           <theme>@style/Theme.DACN</theme>
         </config>
       </layout>
@@ -117,13 +115,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4069348b-b201-447c-9cf0-634cc55deb8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/drawable/apply.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/drawable/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/drawable/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/drawable/bg_banner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/chamcong_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/chamcong_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/new_forum.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/new_forum.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/sign_in.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/mainactivity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/mainactivity.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +146,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
