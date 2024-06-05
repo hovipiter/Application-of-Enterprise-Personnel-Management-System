@@ -2,6 +2,7 @@ package com.example.dacn;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
@@ -12,8 +13,12 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     ImageView  chamcong, salary, nghiphep, contract, department, forum, chinhsach;
+
+
     CardView project;
-    AppCompatImageView imgbtnnotification, imgviewuser;
+    // thanh dashboard
+    AppCompatImageView imgbtnnotification, imgviewuser, imgdrawer;
+    AppCompatTextView tvdashboard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
         findviewbyid();
         openObject();
-
     }
 
     void findviewbyid(){
@@ -35,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         chinhsach = (ImageView) findViewById(R.id.imgChinhSach);
         imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
         imgviewuser = (AppCompatImageView) findViewById(R.id.ib_user);
+        imgdrawer = (AppCompatImageView) findViewById(R.id.ib_back);
+        tvdashboard = (AppCompatTextView) findViewById(R.id.text_dashboard);
+
     }
     void openObject(){
         project.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +86,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        department.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, apartment_page.class);
+                startActivity(intent);
+            }
+        });
+        // dashboard
         imgbtnnotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,10 +109,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        department.setOnClickListener(new View.OnClickListener() {
+        imgdrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, apartment_page.class);
+                Intent intent = new Intent(MainActivity.this, user_page.class);
+                startActivity(intent);
+            }
+        });
+        tvdashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
