@@ -115,10 +115,11 @@
                                 android:textSize="18dp"
                                 android:textColor="@color/black"
                                 android:text="Nghỉ phép"/>
-                            <Switch
-                                android:layout_width="wrap_content"
-                                android:paddingLeft="150dp"
-                                android:layout_height="wrap_content"/>
+                            <ImageButton
+                                android:layout_width="128px"
+                                android:layout_height="128px"
+                                android:background="@drawable/apply"
+                                android:layout_marginLeft="50dp"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -140,7 +141,7 @@
                                 android:layout_height="wrap_content"/>
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
@@ -150,18 +151,20 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingRight="150dp"
-                                android:textSize="18dp"
+                                android:text="Vị trí"
+                                android:layout_gravity="start|center_vertical"
                                 android:textColor="@color/black"
-                                android:text="Vị trí"/>
+                                android:textSize="18dp" />
 
-                            <Switch
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="150dp"
-                                tools:ignore="TouchTargetSizeCheck" />
+                            <ImageButton
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:layout_marginLeft="100dp"
+                                android:layout_gravity="end|center_vertical"
+                                android:background="@drawable/location" />
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
@@ -173,25 +176,12 @@
                                 android:textSize="18dp"
                                 android:textColor="@color/black"
                                 android:text="Nhận diện khôn mặt"/>
-                            <Switch
-                                android:layout_width="wrap_content"
-                                android:paddingLeft="150dp"
-                                android:layout_height="wrap_content"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="40dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginRight="40dp"
-                            android:gravity="center_horizontal"
-                            android:orientation="horizontal">
-                            <ImageView
-                                android:id="@+id/qrCodeImageView"
-                                android:layout_width="300dp"
-                                android:layout_height="300dp"
-                                android:layout_centerInParent="true"
-                                android:src="@drawable/baseline_qr_code_scanner_24" />
+                            <ImageButton
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:background="@drawable/camera"
+                                android:layout_marginLeft="125dp"
+                                android:layout_gravity="end|center_vertical"/>
                         </LinearLayout>
                     </LinearLayout>
                 </ScrollView>
