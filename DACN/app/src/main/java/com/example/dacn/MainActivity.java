@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.mainactivity);
 
         findviewbyid();
-        openObject();
     }
 
     void findviewbyid(){
@@ -38,90 +37,6 @@ public class MainActivity extends AppCompatActivity {
         forum = (ImageView) findViewById(R.id.imgForum);
         chinhsach = (ImageView) findViewById(R.id.imgChinhSach);
         imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
-        imgviewuser = (AppCompatImageView) findViewById(R.id.ib_user);
-        imgdrawer = (AppCompatImageView) findViewById(R.id.ib_back);
-        tvdashboard = (AppCompatTextView) findViewById(R.id.text_dashboard);
-
     }
-    void openObject(){
-        project.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, project_page.class);
-                startActivity(intent);
-            }
-        });
-        chamcong.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, chamcong_page.class);
-                startActivity(intent);
-            }
-        });
-        contract.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, contract_page.class);
-                startActivity(intent);
-            }
-        });
-        salary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, salary_page.class);
-                startActivity(intent);
-            }
-        });
-        nghiphep.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, nghiphep_page.class);
-                startActivity(intent);
-            }
-        });
-        forum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, forum_page.class);
-                startActivity(intent);
-            }
-        });
-        department.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, apartment_page.class);
-                startActivity(intent);
-            }
-        });
-        // dashboard
-        imgbtnnotification.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, notification_page.class);
-                startActivity(intent);
-            }
-        });
-        imgviewuser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, user_page.class);
-                startActivity(intent);
-            }
-        });
 
-        imgdrawer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, user_page.class);
-                startActivity(intent);
-            }
-        });
-        tvdashboard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
 }
