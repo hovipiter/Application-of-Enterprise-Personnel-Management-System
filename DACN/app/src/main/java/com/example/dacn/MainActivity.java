@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     CardView project;
     // thanh dashboard
     AppCompatImageView imgbtnnotification, imgdrawer;
-
+    // navigation bottom
     ImageView home, task, person, setting;
     LinearLayout lin_home, lin_task, lin_person, lin_settings;
     @Override

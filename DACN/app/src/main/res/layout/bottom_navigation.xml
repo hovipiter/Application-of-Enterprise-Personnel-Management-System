@@ -4,7 +4,6 @@
     android:id="@+id/navigation_bottom_page"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="#FFFFFF"
     android:layout_gravity="bottom"
     android:elevation="4dp">
     <LinearLayout

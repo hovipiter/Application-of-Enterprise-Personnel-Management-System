@@ -70,6 +70,11 @@
           <theme>@style/Theme.DACN</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/mainactivity_component.xml">
+        <config>
+          <theme>@style/Theme.DACN</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/nghiphep_page.xml">
         <config>
           <theme>@style/Theme.DACN</theme>
@@ -115,7 +120,17 @@
           <theme>@style/Theme.DACN</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_detail_page.xml">
+        <config>
+          <theme>@style/Theme.DACN</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_page.xml">
+        <config>
+          <theme>@style/Theme.DACN</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_search_page.xml">
         <config>
           <theme>@style/Theme.DACN</theme>
         </config>
@@ -132,33 +147,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4069348b-b201-447c-9cf0-634cc55deb8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/bottom_navigation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_component.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_detail_page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/mainactivity_component.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_detail_page.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_search_page.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/NotificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/NotificationAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/edit_profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_edited.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/forgot_pass.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/forgot_pass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/new_forum.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/new_forum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/sign_in.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/sign_in.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/user_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/drawable/baseline_account_circle_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/drawable/baseline_account_circle_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/drawable/top_bg_for_user_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/drawable/top_bg_for_user_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_component.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_component.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/bottom_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/bottom_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/dashboard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/edit_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/profile_edited.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/forgot_pass.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/forgot_pass_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/item_noti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/notification_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/new_forum.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/forum_created.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/notification_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/notification_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_detail_edit_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_detail_edit_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_detail_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_detail_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/mainactivity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/mainactivity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/profile_edited.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/profile_edited.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/sign_in_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/user_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/profile_page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/sign_in_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/sign_in_page.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,8 +198,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
