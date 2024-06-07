@@ -7,19 +7,19 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class user_page extends AppCompatActivity {
+public class profile_page extends AppCompatActivity {
 
     Button edituser, logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_page);
+        setContentView(R.layout.profile_page);
 
         edituser = findViewById(R.id.btnEditUser);
         edituser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(user_page.this, edit_profile.class);
+                Intent intent = new Intent(profile_page.this, profile_edited.class);
                 startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class user_page extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(user_page.this, sign_in.class);
+                Intent intent = new Intent(profile_page.this, sign_in.class);
                 startActivity(intent);
             }
         });

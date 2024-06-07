@@ -387,7 +387,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:paddingHorizontal="55dp"
+                                android:paddingHorizontal="40dp"
                                 android:paddingLeft="0dp"
                                 android:text="Chỉnh sửa"
                                 android:backgroundTint="@color/teal" />
@@ -405,7 +405,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:paddingHorizontal="70dp"
+                                android:paddingHorizontal="40dp"
                                 android:paddingLeft="0dp"
                                 android:text="Đăng xuất"
                                 android:backgroundTint="@color/teal" />

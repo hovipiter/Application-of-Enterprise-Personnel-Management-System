@@ -12,7 +12,7 @@ public class forgot_pass extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.forgot_pass);
+        setContentView(R.layout.forgot_pass_page);
         
         signin = findViewById(R.id.tvsignin);
         signin.setOnClickListener(new View.OnClickListener() {

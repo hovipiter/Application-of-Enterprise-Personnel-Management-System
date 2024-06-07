@@ -12,6 +12,7 @@
         android:theme="@style/Theme.DACN"
         tools:targetApi="31">
         <activity android:name=".project_page"/>
+        <activity android:name=".bottom_navigation"/>
         <activity android:name=".project_detail_page"/>
         <activity android:name=".project_detail_edit_page"/>
         <activity android:name=".nghiphep_page"/>
@@ -22,11 +23,10 @@
         <activity android:name=".forum_page"/>
         <activity android:name=".new_forum"/>
         <activity android:name=".notification_page"/>
-        <activity android:name=".user_page"/>
-        <activity android:name=".edit_profile"/>
+        <activity android:name=".profile_page"/>
+        <activity android:name=".profile_edited"/>
         <activity android:name=".sign_in"/>
         <activity android:name=".forgot_pass"/>
-
 
         <activity
             android:name=".MainActivity"
