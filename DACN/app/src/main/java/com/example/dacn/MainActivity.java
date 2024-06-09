@@ -11,15 +11,16 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView  chamcong, salary, nghiphep, contract, department, forum, chinhsach;
+    CardView  chamcong, salary, nghiphep, contract, department, forum, chinhsach;
     CardView project;
     // thanh dashboard
-    AppCompatImageView imgbtnnotification, imgdrawer;
+    AppCompatImageView imgbtnnotification, imgdrawer, imgback;
     // navigation bottom
     ImageView home, task, person, setting;
-    LinearLayout lin_home, lin_task, lin_person, lin_settings;
+    TextView welcome1, welcome2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
     void findviewbyid(){
         project =  (CardView) findViewById(R.id.cardviewProject);
-        chamcong =  (ImageView) findViewById(R.id.imgChamCong);
-        salary = (ImageView) findViewById(R.id.imgBangLuong);
-        nghiphep = (ImageView) findViewById(R.id.imgNghiPhep);
-        contract = (ImageView) findViewById(R.id.imgHopDong);
-        department = (ImageView) findViewById(R.id.imgPhongBan);
-        forum = (ImageView) findViewById(R.id.imgForum);
-        chinhsach = (ImageView) findViewById(R.id.imgChinhSach);
+        chamcong =  (CardView) findViewById(R.id.cardViewChamcong);
+        salary = (CardView) findViewById(R.id.cardViewSalary);
+        nghiphep = (CardView) findViewById(R.id.cardViewNghiphep);
+        contract = (CardView) findViewById(R.id.cardViewContract);
+        department = (CardView) findViewById(R.id.cardViewApartment);
+        forum = (CardView) findViewById(R.id.cardViewForum);
+        chinhsach = (CardView) findViewById(R.id.cardViewChinhSach);
         // navigation bottom bar
         home = findViewById(R.id.nav_home_icon);
         task = (ImageView) findViewById(R.id.nav_task_icon);
@@ -45,7 +46,11 @@ public class MainActivity extends AppCompatActivity {
         setting = findViewById(R.id.nav_settings_icon);
         // dashboard
         imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
-        imgdrawer = (AppCompatImageView) findViewById(R.id.ib_back);
+        imgdrawer = (AppCompatImageView) findViewById(R.id.ib_dashboard);
+        imgback = findViewById(R.id.dashboard_back_img);
+        // welcome
+        welcome1 = findViewById(R.id.main_welcome1_textview);
+        welcome2 = findViewById(R.id.main_welcome2_textview);
 
     }
     void openObject(){
@@ -135,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, project_page.class);
+                Intent intent = new Intent(MainActivity.this, setting_page.class);
                 startActivity(intent);
             }
         });
@@ -148,9 +153,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        imgback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        // banner
+        welcome1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, project_page.class);
+                startActivity(intent);
+            }
+        });
 
-
-
+        welcome2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, project_page.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

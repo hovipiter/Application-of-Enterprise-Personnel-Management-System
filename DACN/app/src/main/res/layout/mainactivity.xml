@@ -4,13 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity"
     android:gravity="center">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="140px"
-        android:background="@color/white">
+        android:layout_marginBottom="140px">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -27,7 +27,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
-                android:background="@drawable/bg_banner"
+                android:background="@drawable/background_banner"
                 android:layout_height="150dp"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -37,9 +37,11 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
+                    android:background="@color/white"
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/main_welcome1_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Welcome!"
@@ -48,6 +50,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/main_welcome2_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Let's schedule your projects"

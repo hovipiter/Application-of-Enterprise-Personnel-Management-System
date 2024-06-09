@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".forum_page"
     android:gravity="center">
     <LinearLayout
@@ -83,6 +84,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:text="Tạo bài viết"
+                                android:backgroundTint="@color/teal"
                                 android:textColor="@color/black"
                                 android:textSize="18dp" />
                         </LinearLayout>
@@ -112,8 +114,18 @@
                         </LinearLayout>
                     </LinearLayout>
                 </ScrollView>
+                <include
+                    android:id="@+id/navigation_bottom"
+                    layout="@layout/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
+
     </LinearLayout>
+
 </RelativeLayout>

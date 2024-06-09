@@ -31,100 +31,130 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <CalendarView
                             android:id="@+id/calendarView"
                             android:layout_width="match_parent"
                             style="@style/CardView.Light"
                             android:layout_height="310dp" />
+
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="@drawable/line" />
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="40dp"
-                            android:layout_marginRight="40dp"
-                            android:layout_marginTop="20dp"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingRight="150dp"
-                                android:textSize="18dp"
-                                android:textColor="@color/black"
-                                android:text="Nghỉ phép"/>
-                            <ImageButton
-                                android:layout_width="128px"
-                                android:layout_height="128px"
-                                android:background="@drawable/apply"
-                                android:layout_marginLeft="50dp"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="40dp"
-                            android:layout_marginRight="40dp"
-                            android:layout_marginTop="20dp"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingRight="150dp"
-                                android:textSize="18dp"
-                                android:textColor="@color/black"
-                                android:text="Điểm danh"/>
-                            <Switch
-                                android:layout_width="wrap_content"
-                                android:paddingLeft="150dp"
-                                android:layout_height="wrap_content"/>
-                        </LinearLayout>
+
+                        <!-- Nghỉ phép -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
                             android:layout_marginTop="20dp"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:paddingRight="150dp"
-                                android:text="Vị trí"
-                                android:layout_gravity="start|center_vertical"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
                                 android:textColor="@color/black"
-                                android:textSize="18dp" />
+                                android:text="Nghỉ phép" />
 
                             <ImageButton
+                                android:id="@+id/Chamcong_nghiphep_imgbtn"
                                 android:layout_width="100px"
                                 android:layout_height="100px"
-                                android:layout_marginLeft="100dp"
-                                android:layout_gravity="end|center_vertical"
-                                android:background="@drawable/location" />
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/apply" />
                         </LinearLayout>
+
+                        <!-- Điểm danh -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
                             android:layout_marginTop="20dp"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
                             <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điểm danh" />
+
+                            <Switch
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="18dp"
+                                android:layout_marginLeft="16dp" />
+                        </LinearLayout>
+
+                        <!-- Vị trí -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Vị trí"
                                 android:textColor="@color/black"
-                                android:text="Nhận diện khôn mặt"/>
+                                android:textSize="14dp" />
+
                             <ImageButton
+                                android:id="@+id/Chamcong_location_imgbtn"
                                 android:layout_width="100px"
                                 android:layout_height="100px"
-                                android:background="@drawable/camera"
-                                android:layout_marginLeft="125dp"
-                                android:layout_gravity="end|center_vertical"/>
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/location" />
                         </LinearLayout>
+
+                        <!-- Nhận diện khuôn mặt -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Nhận diện khuôn mặt" />
+
+                            <ImageButton
+                                android:id="@+id/Chamcong_recognize_imgbtn"
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:layout_marginLeft="16dp"
+                                android:background="@drawable/camera" />
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </ScrollView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </LinearLayout>
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>

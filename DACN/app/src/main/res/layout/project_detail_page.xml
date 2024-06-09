@@ -143,19 +143,19 @@
                             <ImageButton
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:background="@drawable/baseline_account_circle_24"
+                                android:background="@drawable/assert_account"
                                 />
                             <ImageButton
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_marginLeft="10dp"
-                                android:background="@drawable/baseline_account_circle_24"
+                                android:background="@drawable/assert_account"
                                 />
                             <ImageButton
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_marginLeft="10dp"
-                                android:background="@drawable/baseline_account_circle_24"
+                                android:background="@drawable/assert_account"
                                 />
                         </LinearLayout>
                         <LinearLayout
@@ -172,11 +172,11 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="      Đây là dự án xây dựng một hệ thống quản lý nhân viên"
+                                android:text="Đây là dự án xây dựng một hệ thống quản lý nhân viên"
                                 android:textSize="14dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_marginRight="10dp"
-                                android:layout_marginLeft="10dp"/>
+                                android:layout_marginLeft="30dp"/>
 
                         </LinearLayout>
 
@@ -186,6 +186,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="right"
                             android:textSize="14dp"
+                            android:backgroundTint="@color/teal"
                             android:layout_marginRight="10dp"
                             android:text="Sửa" />
 
@@ -198,9 +199,22 @@
                             android:padding="10dp"
                             android:text="Nhiệm vụ cần làm"
                             android:textSize="20sp" />
+
+                        <include
+                            layout="@layout/project_todolist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true" />
+
                     </LinearLayout>
                 </ScrollView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </LinearLayout>
+    <include
+        android:id="@+id/navigation_bottom"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>

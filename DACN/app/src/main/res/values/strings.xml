@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DACN</string>
+    <string name="app_name">BlueWave</string>
         <string name="noti_title">Thông báo</string>
         <string name="username">Username</string>
         <string name="email">Email</string>
@@ -30,4 +30,9 @@
         <string name="fail_to_send_email_verify">Failed to Send Verification Email</string>
         <string name="verify_email_title1">Start to reset Password</string>
         <string name="verify_email_title2">Verify Email First!</string>
+
+    <string-array name="spinner_items">
+        <item>Vietnamese</item>
+        <item>English</item>
+    </string-array>
 </resources>

@@ -1,8 +1,12 @@
 package com.example.dacn;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -11,6 +15,9 @@ import java.util.List;
 
 public class notification_page extends AppCompatActivity {
     private RecyclerView notiRecycleView;
+    // thanh dashboard
+    AppCompatImageView imgback;
+    // navigation bottom
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
@@ -28,6 +35,26 @@ public class notification_page extends AppCompatActivity {
         notiRecycleView.setAdapter(notiAdapter);
         notiRecycleView.setLayoutManager(layoutManager);
 
+        findviewbyid_notification();
+        openObject_notification();
 
+    }
+    void findviewbyid_notification(){
+        // dashboard
+        imgback = findViewById(R.id.setting_back_img);
+        //forum
+
+    }
+
+    void openObject_notification(){
+        // forum
+        // dashboard
+        imgback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(notification_page.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
