@@ -3,17 +3,27 @@ package com.example.dacn;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class project_detail_edit_page extends AppCompatActivity {
     // thanh dashboard
     AppCompatImageView imgbtnnotification, imgdrawer, imgback;
     // navigation bottom
     ImageView home, task, person, setting;
+
+    // To do list
+    private TaskAdapter taskAdapter;
+    private List<Task> tasks;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +31,22 @@ public class project_detail_edit_page extends AppCompatActivity {
 
         findviewbyid_project_detail_edit();
         openObject_project_detail_edit();
+
+        tasks = new ArrayList<>();
+        taskAdapter = new TaskAdapter(tasks);
+
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(taskAdapter);
+
+        Button buttonAddTask = findViewById(R.id.buttonAddTask);
+        buttonAddTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tasks.add(new Task(""));
+                taskAdapter.notifyItemInserted(tasks.size() - 1);
+            }
+        });
     }
 
     void findviewbyid_project_detail_edit(){

@@ -8,6 +8,11 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class project_detail_page extends AppCompatActivity {
     Button editDetailProject;
@@ -17,12 +22,32 @@ public class project_detail_page extends AppCompatActivity {
     // navigation bottom
     ImageView home, task, person, setting;
 
+    // To do list
+    private TaskAdapter taskAdapter;
+    private List<Task> tasks;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.project_detail_page);
 
         findviewbyid_project_detail();
         openObject_project_detail();
+
+        tasks = new ArrayList<>();
+        taskAdapter = new TaskAdapter(tasks);
+
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(taskAdapter);
+
+        Button buttonAddTask = findViewById(R.id.buttonAddTask);
+        buttonAddTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tasks.add(new Task(""));
+                taskAdapter.notifyItemInserted(tasks.size() - 1);
+            }
+        });
     }
 
     void findviewbyid_project_detail(){
