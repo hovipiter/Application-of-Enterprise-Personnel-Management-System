@@ -29,7 +29,9 @@
 
                 <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="144px"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -267,18 +269,12 @@
 
 
                         </LinearLayout>
-
-
-
                     </LinearLayout>
                 </ScrollView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Button Add Task -->
-
-    <!-- Bottom Navigation -->
     <include
         android:id="@+id/navigation_bottom"
         layout="@layout/bottom_navigation"

@@ -41,7 +41,6 @@ public class project_page extends AppCompatActivity {
         projectRecycleView.setAdapter(projectAdapter);
         projectRecycleView.setLayoutManager(layoutManager);
 
-
         findviewbyid_project();
         openObject_project();
 
@@ -58,7 +57,6 @@ public class project_page extends AppCompatActivity {
         imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
         imgback = findViewById(R.id.dashboard_back_img);
         //forum
-
     }
 
     void openObject_project(){

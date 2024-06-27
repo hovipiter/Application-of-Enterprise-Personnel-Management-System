@@ -203,17 +203,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4069348b-b201-447c-9cf0-634cc55deb8c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/apartment_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/apartment_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/chamcong_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/chamcong_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/nghiphep_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/nghiphep_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/forum_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/forum_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_edited.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_edited.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_detail_edit_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_detail_edit_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_detail_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_detail_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_detail_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_detail_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_search_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_search_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_detail_edit_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_detail_edit_page.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,6 +279,7 @@
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/DACN-Git/Application-of-Enterprise-Personnel-Management-System/DACN/app/src/main/res/mipmap-mdpi",
     "last_opened_file_path": "D:/testAnd",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>

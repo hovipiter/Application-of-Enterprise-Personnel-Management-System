@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -18,7 +19,7 @@ public class project_detail_page extends AppCompatActivity {
     Button editDetailProject;
 
     // thanh dashboard
-    AppCompatImageView imgbtnnotification, imgdrawer, imgback;
+    AppCompatImageView imgbtnnotification, imgback;
     // navigation bottom
     ImageView home, task, person, setting;
 
@@ -40,7 +41,7 @@ public class project_detail_page extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(taskAdapter);
 
-        Button buttonAddTask = findViewById(R.id.buttonAddTask);
+        TextView buttonAddTask = findViewById(R.id.buttonAddTask);
         buttonAddTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +63,6 @@ public class project_detail_page extends AppCompatActivity {
         imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
         imgback = findViewById(R.id.dashboard_back_img);
         //forum
-
     }
 
     void openObject_project_detail(){

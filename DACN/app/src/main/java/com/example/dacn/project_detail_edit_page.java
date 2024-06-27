@@ -17,7 +17,7 @@ import java.util.List;
 
 public class project_detail_edit_page extends AppCompatActivity {
     // thanh dashboard
-    AppCompatImageView imgbtnnotification, imgdrawer, imgback;
+    AppCompatImageView imgbtnnotification, imgback;
     // navigation bottom
     ImageView home, task, person, setting;
 
@@ -39,7 +39,7 @@ public class project_detail_edit_page extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(taskAdapter);
 
-        Button buttonAddTask = findViewById(R.id.buttonAddTask);
+        TextView buttonAddTask = findViewById(R.id.buttonAddTask);
         buttonAddTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
