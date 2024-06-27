@@ -34,7 +34,6 @@
         <activity android:name=".profile_edited"/>
         <activity android:name=".sign_in"/>
         <activity android:name=".forgot_pass"/>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

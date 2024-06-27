@@ -28,22 +28,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="0dp" />
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/ib_dashboard"
+                android:id="@+id/dashboard_back_img"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:padding="10dp"
-                android:src="@drawable/assert_dashboard"
+                android:src="@drawable/assert_back"
                 android:tint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/dashboard_back_img"
-                android:layout_width="64px"
-                android:layout_height="64px"
-                android:background="@drawable/back_white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/ib_dashboard"
                 app:layout_constraintTop_toTopOf="parent" />
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/ib_noti"
