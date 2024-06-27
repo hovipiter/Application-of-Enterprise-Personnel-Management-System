@@ -20,11 +20,6 @@
           <theme>@style/Theme.DACN</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_page.xml">
-        <config>
-          <theme>@style/Theme.DACN</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/bottom_navigation.xml">
         <config>
           <theme>@style/Theme.DACN</theme>
@@ -41,6 +36,16 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/dashboard.xml">
+        <config>
+          <theme>@style/Theme.DACN</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/employee_item.xml">
+        <config>
+          <theme>@style/Theme.DACN</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/employee_page.xml">
         <config>
           <theme>@style/Theme.DACN</theme>
         </config>
@@ -202,13 +207,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4069348b-b201-447c-9cf0-634cc55deb8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/EmployeeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/employee_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/forum_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/forum_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_edited.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_edited.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_detail_edit_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_detail_edit_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_detail_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_detail_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/project_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_detail_edit_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/project_detail_edit_page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/apartment_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/employee_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_employee_page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/apartment_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/employee_page.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,15 +286,15 @@
     "cidr.known.project.marker": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/DACN-Git/Application-of-Enterprise-Personnel-Management-System/DACN/app/src/main/res/mipmap-mdpi",
-    "last_opened_file_path": "D:/testAnd",
+    "last_opened_file_path": "D:/DACN-Git/Application-of-Enterprise-Personnel-Management-System/DACN/app/src/main/java/com/example/dacn",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DACN-Git\Application-of-Enterprise-Personnel-Management-System\DACN\app\src\main\res\layout" />
       <recent name="D:\DACN-Git\Application-of-Enterprise-Personnel-Management-System\DACN\app\src\main\java\com\example\dacn" />
+      <recent name="D:\DACN-Git\Application-of-Enterprise-Personnel-Management-System\DACN\app\src\main\res\layout" />
       <recent name="D:\DACN-Git\Application-of-Enterprise-Personnel-Management-System\DACN\app\src\main\res" />
       <recent name="D:\DACN-Git\Application-of-Enterprise-Personnel-Management-System\DACN\app\src\main\res\drawable" />
       <recent name="D:\DACN-Git\Application-of-Enterprise-Personnel-Management-System\DACN\app\src\main\res\mipmap-mdpi" />

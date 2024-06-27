@@ -18,7 +18,7 @@
         <activity android:name=".nghiphep_page"/>
         <activity android:name=".contract_page"/>
         <activity android:name=".chamcong_page"/>
-        <activity android:name=".apartment_page"/>
+        <activity android:name=".employee_page"/>
         <activity android:name=".salary_page"/>
         <activity android:name=".salary_detail_page"/>
         <activity android:name=".setting_page"/>
