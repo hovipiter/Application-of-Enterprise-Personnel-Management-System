@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         setting = findViewById(R.id.nav_settings_icon);
         // dashboard
         imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
-        imgdrawer = (AppCompatImageView) findViewById(R.id.ib_dashboard);
         imgback = findViewById(R.id.dashboard_back_img);
         // welcome
         welcome1 = findViewById(R.id.main_welcome1_textview);

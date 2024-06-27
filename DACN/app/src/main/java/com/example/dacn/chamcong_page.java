@@ -33,7 +33,6 @@ public class chamcong_page extends AppCompatActivity {
         setting = findViewById(R.id.nav_settings_icon);
         // dashboard
         imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
-        imgdrawer = (AppCompatImageView) findViewById(R.id.ib_dashboard);
         imgback = findViewById(R.id.dashboard_back_img);
         // chamcong
         nghiphep_imgbtn = findViewById(R.id.Chamcong_nghiphep_imgbtn);
