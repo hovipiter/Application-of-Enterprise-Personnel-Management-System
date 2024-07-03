@@ -48,10 +48,10 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.MyViewHo
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            textviewProjectTitle = itemView.findViewById(R.id.itemtv_projecttitle);
-            textviewProjectContent = itemView.findViewById(R.id.itemtv_projectcontent);
-            textviewTimeLeft = itemView.findViewById(R.id.itemtv_timeleft);
-            textviewGetTimeLeft = itemView.findViewById(R.id.itemtv_gettimeleft);
+            textviewProjectTitle = itemView.findViewById(R.id.project_page_item_title);
+            textviewProjectContent = itemView.findViewById(R.id.project_page_item_content);
+            textviewTimeLeft = itemView.findViewById(R.id.project_page_item_timeleft);
+            textviewGetTimeLeft = itemView.findViewById(R.id.project_page_item_gettimeleft);
         }
     }
 }

@@ -53,7 +53,7 @@ public class project_detail_page extends AppCompatActivity {
 
     void findviewbyid_project_detail(){
         // edit page
-        editDetailProject = findViewById(R.id.btn_editDetailproject);
+        editDetailProject = findViewById(R.id.project_detail_page_edit_btn);
         // navigation bottom bar
         home = findViewById(R.id.nav_home_icon);
         task = (ImageView) findViewById(R.id.nav_task_icon);

@@ -6,9 +6,9 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/employee_name"
+        android:id="@+id/employee_page_employee_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"s
-        android:text="Employee Name" />
+        android:textSize="14sp"
+        android:text="@string/employee_page_employee_name" />
 </LinearLayout>

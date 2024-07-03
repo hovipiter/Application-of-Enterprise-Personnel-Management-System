@@ -1,35 +1,234 @@
 <resources>
     <string name="app_name">BlueWave</string>
-        <string name="noti_title">Thông báo</string>
-        <string name="username">Username</string>
-        <string name="email">Email</string>
-        <string name="password">Password</string>
-        <string name="sign_up">SIGN UP</string>
-        <string name="already_have_an_account">Already have an account?</string>
-        <string name="sign_in">Sign In</string>
-        <string name="note">note</string>
-        <string name="date">date</string>
-        <string name="settings">settings</string>
-        <string name="dd_mm_yy">dd/mm/yy</string>
-        <string name="log_in">Start to LOG IN!</string>
-        <string name="login">Log in</string>
-        <string name="don_t_you_have_an_account">Don\'t you have an account?</string>
-        <string name="signup">Sign up</string>
-        <string name="reset_password"> Reset</string>
-        <string name="dmy">Ngày tháng năm</string>
-        <string name="type_here">Nhập ở đây</string>
-        <string name="back">back</string>
-        <string name="info">info</string>
-        <string name="share">share</string>
-        <string name="phongchu">Phông chữ và Cỡ chữ</string>
-        <string name="quanlytaikhoan">Quản lý tài khoản</string>
-        <string name="thongtinphienban">Thông tin phiên bản</string>
-        <string name="thongtinnguoidung">THÔNG TIN NGƯỜI DÙNG</string>
-        <string name="forgot_password">Forgot your password?</string>
-        <string name="send_Email_Verification">Verification Email is Sent, Verify and Log In Again</string>
-        <string name="fail_to_send_email_verify">Failed to Send Verification Email</string>
-        <string name="verify_email_title1">Start to reset Password</string>
-        <string name="verify_email_title2">Verify Email First!</string>
+    <string name="description">description</string>
+        <!---file mainactivity-->
+    <string name="main_welcome1_textview">Welcome!</string>
+    <string name="main_welcome2_textview">Let\'s schedule your projects!</string>
+    <string name="main_acti_textview_project">Project</string>
+    <string name="main_acti_textview_timekeepping">Timekeeping</string>
+    <string name="main_acti_textview_absence">Absence</string>
+    <string name="main_acti_textview_salary">Salary</string>
+    <string name="main_acti_textview_employee">Employee</string>
+    <string name="main_acti_textview_contract">Contract</string>
+    <string name="main_acti_textview_forum">Forum</string>
+    <string name="main_acti_textview_policy">Policy</string>
+        <!---file login-->
+    <string name="signin_title">SIGN IN</string>
+    <string name="signin_username_input">Username</string>
+    <string name="signin_password_input">Password</string>
+    <string name="signin_button_signin">Sign in</string>
+    <string name="signin_forgotpass">Forgot password?</string>
+        <!---page forgot pass-->
+    <string name="forgot_pass_page_forgotpass">RESET PASSWORD</string>
+    <string name="forgot_pass_page_username_inpput">Username</string>
+    <string name="forgot_pass_page_button_reset">Reset</string>
+    <string name="forgot_pass_page_textview_signin">Sign in</string>
+        <!---setting page-->
+    <string name="setting_page_title">Settings</string>
+    <string name="setting_page_account">Account</string>
+    <string name="setting_page_logout">Sign out</string>
+    <string name="setting_page_delete_account">Delete account</string>
+    <string name="settring_page_general_information">General information</string>
+    <string name="setting_page_notification">Notification</string>
+    <string name="setting_page_language">Language</string>
+    <string name="setting_page_darkmode">Dark mode</string>
+    <string name="setting_page_about_application">Information about application</string>
+    <string name="setting_page_help">Help</string>
+    <string name="setting_page_delete_about">About</string>
+        <!---setting notification page-->
+    <string name="setting_notification_title">Notification settings</string>
+    <string name="setting_notification_sustem_noti">Notification system</string>
+    <string name="setting_notification_noti_noti_pushup">Notification pops up</string>
+    <string name="setting_notification_noti_from_email">Notification via email</string>
+    <string name="setting_notification_effect">Notification effect</string>
+    <string name="setting_notification_ring">Vibration</string>
+    <string name="setting_notification_blink">Flashing light</string>
+        <!---setting notification page-->
+    <string name="setting_language_title">Language settings</string>
+    <string name="setting_language_language">Language</string>
+    <string name="setting_language_language_spinner"> Language</string>
+    <string name="setting_language_font">Font</string>
+    <string name="setting_language_change_fontstyle">Font style</string>
+    <string name="setting_language_change_fontsize"> Font size</string>
+        <!---setting fontsize page-->
+    <string name="setting_fontsize_title">Language settings</string>
+    <string name="setting_fontsize_selectfont">Select font size</string>
+    <string name="radioVerySmall">Very small</string>
+    <string name="radioSmall">Small</string>
+    <string name="radioMedium">Medium</string>
+    <string name="radioBig">Big</string>
+        <!---setting font page-->
+    <string name="setting_font_title">Language settings</string>
+    <string name="setting_font_select_font">Select font style</string>
+    <string name="radioOpen_sans">Open-sans</string>
+    <string name="radioDancing">Dancing</string>
+    <string name="radioComfortaa">Comfortaa</string>
+        <!---salary search page-->
+    <string name="salary_search_page_time">December, 2023</string>
+    <string name="salary_search_page_salary">Salary</string>
+    <string name="salary_search_page_time_number">+3.000.000</string>
+    <string name="salary_search_page_award">Award</string>
+    <string name="salary_search_page_award_number">+3.000.000</string>
+    <string name="salary_search_page_assist">Assist</string>
+    <string name="salary_search_page_assist_number">+3.000.000</string>
+    <string name="salary_search_page_assurance">Assuance</string>
+    <string name="salary_search_page_assurance_number">+3.000.000</string>
+    <string name="salary_search_page_tax">Tax</string>
+    <string name="salary_search_page_tax_number">+3.000.000</string>
+    <string name="salary_search_page_other">Others</string>
+    <string name="salary_search_page_other_number">+3.000.000</string>
+    <string name="salary_search_page_sum">Sum</string>
+    <string name="salary_search_page_sum_number">+3.000.000</string>
+    <string name="salary_search_page_receive">Đã lãnh vào ngày .../.../...</string>
+    <!---salary detail page-->
+    <string name="salary_detail_page_time">December, 2023</string>
+    <string name="salary_detail_page_salary">Salary</string>
+    <string name="salary_detail_page_salary_number">+3.000.000</string>
+    <string name="salary_detail_page_award">Award</string>
+    <string name="salary_detail_page_award_number">+3.000.000</string>
+    <string name="salary_detail_page_assist">Assist</string>
+    <string name="salary_detail_page_assist_number">+3.000.000</string>
+    <string name="salary_detail_page_assurance">Assuance</string>
+    <string name="salary_detail_page_assurance_number">+3.000.000</string>
+    <string name="salary_detail_page_tax">Tax</string>
+    <string name="salary_detail_page_tax_number">+3.000.000</string>
+    <string name="salary_detail_page_other">Others</string>
+    <string name="salary_detail_page_other_number">+3.000.000</string>
+    <string name="salary_detail_page_sum">Sum</string>
+    <string name="salary_detail_page_sum_number">+3.000.000</string>
+    <string name="salary_detail_page_receive">Đã lãnh vào ngày .../.../...</string>
+        <!---salary page -->
+    <string name="salary_page_title">This year</string>
+    <string name="salary_page_salary">Salary</string>
+    <string name="salary_page_salary_number">+3.000.000</string>
+    <string name="salary_page_award">Bonus</string>
+    <string name="salary_page_award_number">+3.000.000</string>
+    <string name="salary_page_sum">Sum</string>
+    <string name="salary_page_sum_number">9.000.000</string>
+    <string name="salary_page_search">Look up salary in the last 12 months</string>
+    <string name="salary_page_month">Month</string>
+    <string name="salary_page_month_number">12</string>
+    <string name="salary_page_year">Year</string>
+    <string name="salary_page_year_number">2019</string>
+    <string name="salary_page_search_btn">Search</string>
+        <!---project page -->
+    <string name="project_page_new_task_btn">New task</string>
+    <string name="project_page_number1">13</string>
+    <string name="project_page_all_project">All projects</string>
+    <string name="project_page_number2">3</string>
+    <string name="project_page_unfinished">Incomplete projects</string>
+    <string name="project_page_number3">10</string>
+    <string name="project_page_finish">Completed</string>
+    <string name="project_page_list_project">Project list</string>
+    <string name="project_page_item_title">Project 1</string>
+    <string name="project_page_item_content">Create website</string>
+    <string name="project_page_item_timeleft">Time left</string>
+    <string name="project_page_item_gettimeleft"> 5 days</string>
+    <!---project detail page -->
+    <string name="project_detail_page_project_name">Project Name</string>
+    <string name="project_detail_page_edit_btn">Edit</string>
+    <string name="project_detail_page_start_day"> Start day</string>
+    <string name="project_detail_page_get_startday">1/1/2020</string>
+    <string name="project_detail_page_end_day">End day</string>
+    <string name="project_detail_page_get_end_day">3/4/2020</string>
+    <string name="project_detail_page_timeleft">Time left</string>
+    <string name="project_detail_page_get_timeleft">5 days</string>
+    <string name="project_detail_page_member">Members in the project</string>
+    <string name="project_detail_page_describe_title">Describe project</string>
+    <string name="project_detail_page_describe_content">This is a project to build an employee management system</string>
+    <string name="project_detail_page_task">Tasks</string>
+    <string name="item_todolist">Enter task</string>
+    <!---project detail edit page-->
+    <string name="project_detail_edit_page_project_name">Project Name</string>
+    <string name="project_detail_edit_page_save_btn">Save</string>
+    <string name="project_detail_edit_page_start_day"> Start day</string>
+    <string name="project_detail_edit_page_get_startday">1/1/2020</string>
+    <string name="project_detail_edit_page_end_day">End day</string>
+    <string name="project_detail_edit_page_get_end_day">3/4/2020</string>
+    <string name="project_detail_edit_page_timeleft">Time left</string>
+    <string name="project_detail_edit_page_get_timeleft">5 days</string>
+    <string name="project_detail_edit_page_member">Members in the project</string>
+    <string name="project_detail_edit_page_describe_title">Describe project</string>
+    <string name="project_detail_edit_page_describe_content">This is a project to build an employee management system</string>
+    <string name="project_detail_detail_page_task">Tasks</string>
+    <string name="project_detail_edit_page_add_task">Add</string>
+
+    <!---profile page -->
+    <string name="profile_page_username_title">User Name</string>
+    <string name="profile_page_ID">ID number</string>
+    <string name="profile_page_position">Position</string>
+
+    <string name="profile_component_email">user@gmail.com</string>
+    <string name="profile_component_date_of_birth">Date of birth</string>
+    <string name="profile_component_gender">Gender</string>
+    <string name="profile_component_phone_number">Phone number</string>
+    <string name="profile_component_address">Address</string>
+    <string name="profile_component_id_card">ID card number</string>
+    <string name="profile_component_nationality">Nationality</string>
+    <string name="profile_component_national">Nation</string>
+    <string name="profile_component_foreign_proficiency">Language proficiency</string>
+    <string name="profile_component_start_date">Start date</string>
+    <string name="profile_component_department">Department</string>
+    <string name="profile_component_edit_btn">Edit profile</string>
+
+    <string name="profile_edited_page_username_title">User Name</string>
+    <string name="profile_edited_page_ID">ID number</string>
+    <string name="profile_edited_page_position">Position</string>
+
+    <string name="profile_component_edited_page_email">user@gmail.com</string>
+    <string name="profile_component_edited_page_date_of_birth">Date of birth</string>
+    <string name="profile_component_edited_page_gender">Gender</string>
+    <string name="profile_component_edited_page_phone_number">Phone number</string>
+    <string name="profile_component_edited_page_address">Address</string>
+    <string name="profile_component_edited_page_idcard">ID card number</string>
+    <string name="profile_component_edited_page_nationality">Nationality</string>
+    <string name="profile_component_edited_page_national">Nation</string>
+    <string name="profile_component_edited_page_language_proficiency">Language proficiency</string>
+    <string name="profile_component_edited_page_start_date">Start date</string>
+    <string name="profile_component_edited_page_department">Department</string>
+    <string name="profile_component_edited_page_save_btn">Save</string>
+
+    <string name="notification_page_title">Notification</string>
+    <string name="notification_item_page_title_noti">Notification title</string>
+    <string name="notification_item_page_content">Notification content</string>
+    <string name="notification_item_page_day">dd//mm//yy</string>
+
+    <!---nghiphep page -->
+    <string name="nghiphep_page_leave_request">Leave request</string>
+    <string name="nghiphep_page_time">Time off</string>
+    <string name="nghiphep_page_get_time">20/10/2022</string>
+    <string name="nghiphep_page_reason">Reason</string>
+    <string name="nghiphep_page_proof">Evidence (if any)</string>
+    <string name="nghiphep_page_file_upload">Upload file</string>
+    <string name="nghiphep_page_submit">Submit</string>
+
+    <string name="forum_page_title">FORUM</string>
+    <string name="forum_page_search">Search</string>
+    <string name="forum_page_create_post">Create a new post</string>
+    <string name="forum_item_title">Title</string>
+    <string name="forum_item_content">The content of that discussion article</string>
+    <string name="forum_item_like">Like</string>
+    <string name="forum_item_comment">Comment</string>
+    <string name="forum_item_share">Share</string>
+    <string name="forum_created_title_page">New post</string>
+    <string name="forum_created_title_edit_text">Title</string>
+    <string name="forum_created_content">Input here</string>
+    <string name="forum_created_post_btn">Post</string>
+
+    <!--employee page -->
+    <string name="emploee_page_title">Employee list</string>
+    <string name="employee_page_employee_name">Employee Name</string>
+     <!---Cham cong page-->
+    <string name="chamcong_page_nghiphep">Leave request</string>
+    <string name="chamcong_page_diemdanh">Attendance</string>
+    <string name="chamcong_page_location">Location</string>
+    <string name="chamcong_page_nhandien">Recognise</string>
+
+    <string name="dashboard_setting">Settings</string>
+    <string name="dashboard_person">Person</string>
+    <string name="dashboard_task">Task</string>
+    <string name="dashboard_home">Home</string>
+    <string name="salary_page_detail">Detail</string>
 
     <string-array name="spinner_items">
         <item>Vietnamese</item>

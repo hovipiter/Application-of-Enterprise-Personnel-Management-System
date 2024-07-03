@@ -61,11 +61,11 @@ public class ForumAdapter extends RecyclerView.Adapter<ForumAdapter.MyViewHolder
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvforumTitle = itemView.findViewById(R.id.itemtv_forumtitle);
-            tvforumContent = itemView.findViewById(R.id.itemtv_forumcontent);
-            tvforumLike = itemView.findViewById(R.id.itemtv_forumlike);
-            tvforumComment = itemView.findViewById(R.id.itemtv_forumcmt);
-            tvforumShare = itemView.findViewById(R.id.itemtv_forumshare);
+            tvforumTitle = itemView.findViewById(R.id.forum_item_title);
+            tvforumContent = itemView.findViewById(R.id.forum_item_content);
+            tvforumLike = itemView.findViewById(R.id.forum_item_like);
+            tvforumComment = itemView.findViewById(R.id.forum_item_comment);
+            tvforumShare = itemView.findViewById(R.id.forum_item_share);
             imgbtnLike = itemView.findViewById(R.id.itemimgbtn_forumlike);
             imgbtnComment = itemView.findViewById(R.id.itemimgbtn_forumcmt);
             imgbtnShare = itemView.findViewById(R.id.itemimgbtn_forumshare);

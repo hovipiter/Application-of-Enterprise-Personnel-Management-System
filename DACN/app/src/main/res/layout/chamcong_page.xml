@@ -14,8 +14,7 @@
         <include
             layout="@layout/dashboard"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true" />
+            android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_marginTop="10dp"
             app:layout_constraintTop_toBottomOf="@id/linear1"
@@ -31,18 +30,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-
                         <CalendarView
                             android:id="@+id/calendarView"
                             android:layout_width="match_parent"
                             style="@style/CardView.Light"
                             android:layout_height="310dp" />
-
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="@drawable/line" />
-
                         <!-- Nghỉ phép -->
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -52,20 +48,20 @@
                             android:layout_marginTop="20dp"
                             android:orientation="horizontal"
                             android:gravity="center_vertical">
-
                             <TextView
+                                android:id="@+id/chamcong_page_nghiphep"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:textSize="14dp"
+                                android:textSize="14sp"
                                 android:textColor="@color/black"
-                                android:text="Nghỉ phép" />
+                                android:text="@string/chamcong_page_nghiphep" />
 
                             <ImageButton
                                 android:id="@+id/Chamcong_nghiphep_imgbtn"
-                                android:layout_width="100px"
-                                android:layout_height="100px"
-                                android:layout_marginLeft="16dp"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginStart="16dp"
                                 android:background="@drawable/apply" />
                         </LinearLayout>
 
@@ -80,19 +76,19 @@
                             android:gravity="center_vertical">
 
                             <TextView
+                                android:id="@+id/chamcong_page_diemdanh"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:textSize="14dp"
+                                android:textSize="14sp"
                                 android:textColor="@color/black"
-                                android:text="Điểm danh" />
-
+                                android:text="@string/chamcong_page_diemdanh" />
                             <Switch
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="16dp" />
+                                android:layout_marginStart="16dp"
+                                tools:ignore="UseSwitchCompatOrMaterialXml" />
                         </LinearLayout>
-
                         <!-- Vị trí -->
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -102,23 +98,21 @@
                             android:layout_marginTop="20dp"
                             android:orientation="horizontal"
                             android:gravity="center_vertical">
-
                             <TextView
+                                android:id="@+id/chamcong_page_location"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Vị trí"
+                                android:text="@string/chamcong_page_location"
                                 android:textColor="@color/black"
-                                android:textSize="14dp" />
-
+                                android:textSize="14sp" />
                             <ImageButton
                                 android:id="@+id/Chamcong_location_imgbtn"
-                                android:layout_width="100px"
-                                android:layout_height="100px"
-                                android:layout_marginLeft="16dp"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginStart="16dp"
                                 android:background="@drawable/location" />
                         </LinearLayout>
-
                         <!-- Nhận diện khuôn mặt -->
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -128,25 +122,22 @@
                             android:layout_marginTop="20dp"
                             android:orientation="horizontal"
                             android:gravity="center_vertical">
-
                             <TextView
+                                android:id="@+id/chamcong_page_nhandien"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:textSize="14dp"
+                                android:textSize="14sp"
                                 android:textColor="@color/black"
-                                android:text="Nhận diện khuôn mặt" />
-
+                                android:text="@string/chamcong_page_nhandien" />
                             <ImageButton
                                 android:id="@+id/Chamcong_recognize_imgbtn"
-                                android:layout_width="100px"
-                                android:layout_height="100px"
-                                android:layout_marginLeft="16dp"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginStart="16dp"
                                 android:background="@drawable/camera" />
                         </LinearLayout>
-
                     </LinearLayout>
-
                 </ScrollView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

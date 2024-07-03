@@ -11,7 +11,7 @@
         android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/editTextTask"
+        android:id="@+id/item_todolist"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"

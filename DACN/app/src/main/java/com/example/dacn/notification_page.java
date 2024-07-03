@@ -41,7 +41,7 @@ public class notification_page extends AppCompatActivity {
     }
     void findviewbyid_notification(){
         // dashboard
-        imgback = findViewById(R.id.setting_back_img);
+        imgback = findViewById(R.id.dashboard_back_img);
         //forum
 
     }

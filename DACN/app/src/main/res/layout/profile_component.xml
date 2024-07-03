@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bottom_gb_for_user_page"
@@ -24,7 +24,8 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="25dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
                 <ImageView
                     android:id="@+id/imageViewMail"
                     android:layout_width="30dp"
@@ -37,14 +38,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/mail" />
                 <TextView
-                    android:id="@+id/textViewUsserMail"
+                    android:id="@+id/profile_component_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="user@gmail.com"
+                    android:text="@string/profile_component_email"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,14 +66,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     android:background="@drawable/cake" />
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/profile_component_date_of_birth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ngày sinh"
+                    android:text="@string/profile_component_date_of_birth"
                     android:textColor="@color/black"
-                android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                 android:layout_gravity="center_vertical"
-                android:textSize="14dp"/>
+                android:textSize="14sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -93,14 +94,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/gender" />
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/profile_component_gender"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Giới tính"
+                    android:text="@string/profile_component_gender"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,14 +122,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/assert_phone" />
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/profile_component_phone_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Số điện thoại"
+                    android:text="@string/profile_component_phone_number"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -149,14 +150,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/assert_location" />
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/profile_component_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Địa chỉ"
+                    android:text="@string/profile_component_address"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -178,14 +179,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/idetitycard" />
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/profile_component_id_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CCCD"
+                    android:text="@string/profile_component_id_card"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -206,23 +207,23 @@
                 app:layout_constraintVertical_bias="0.173"
                 app:srcCompat="@drawable/national" />
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/profile_component_nationality"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Quốc tịch"
+                    android:text="@string/profile_component_nationality"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/profile_component_national"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dân tộc"
+                    android:text="@string/profile_component_national"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -243,14 +244,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/foreign" />
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/profile_component_foreign_proficiency"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Trình độ ngoại ngữ"
+                    android:text="@string/profile_component_foreign_proficiency"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -271,14 +272,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/day" />
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/profile_component_start_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ngày bắt đầu vào làm"
+                    android:text="@string/profile_component_start_date"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -299,14 +300,14 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/department" />
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/profile_component_department"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bộ phận"
+                    android:text="@string/profile_component_department"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -317,13 +318,12 @@
                 android:gravity="center"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/btnEditUser"
+                    android:id="@+id/profile_component_edit_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:paddingHorizontal="20dp"
-                    android:paddingLeft="0dp"
-                    android:text="Chỉnh sửa"
+                    android:text="@string/profile_component_edit_btn"
                     android:backgroundTint="@color/teal" />
             </LinearLayout>
         </LinearLayout>

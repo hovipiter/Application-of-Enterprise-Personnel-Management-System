@@ -28,8 +28,8 @@ public class salary_page extends AppCompatActivity {
 
     }
     public void findviewbyid_salary(){
-        detail = findViewById(R.id.proj_detail_textview);
-        searchbtn = findViewById(R.id.salary_search_btn);
+        detail = findViewById(R.id.salary_page_detail);
+        searchbtn = findViewById(R.id.salary_page_search_btn);
         // navigation bottom bar
         home = findViewById(R.id.nav_home_icon);
         task = (ImageView) findViewById(R.id.nav_task_icon);
@@ -43,7 +43,7 @@ public class salary_page extends AppCompatActivity {
         detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(salary_page.this, salary_detail_page.class);
+                Intent intent = new Intent(salary_page.this, salary_search_page.class);
                 startActivity(intent);
             }
         });

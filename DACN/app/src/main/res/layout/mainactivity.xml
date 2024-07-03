@@ -44,7 +44,7 @@
                         android:id="@+id/main_welcome1_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Welcome!"
+                        android:text="@string/main_welcome1_textview"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -53,7 +53,7 @@
                         android:id="@+id/main_welcome2_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Let's schedule your projects"
+                        android:text="@string/main_welcome2_textview"
                         android:textColor="@android:color/black"
                         android:textSize="14sp" />
                 </LinearLayout>

@@ -101,7 +101,7 @@ public class employee_page extends AppCompatActivity {
         imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
         imgback = findViewById(R.id.dashboard_back_img);
         //
-        departmentSpinner = findViewById(R.id.department_spinner);
+        departmentSpinner = findViewById(R.id.employee_page_department_spinner);
         employeeRecyclerView = findViewById(R.id.employee_recycler_view);
     }
 

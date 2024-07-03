@@ -19,22 +19,23 @@
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/setting_back_img"
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/description"
                 android:src="@drawable/back_setting" />
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/setting_notification_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cài đặt thông báo"
-                android:layout_gravity="left"
+                android:text="@string/setting_notification_title"
+                android:layout_gravity="start"
                 android:layout_marginTop="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:textColor="@color/white"
-                android:textSize="24dp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -44,10 +45,11 @@
             android:orientation="vertical">
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/bottom_gb_for_user_page"
@@ -56,36 +58,36 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginEnd="25dp"
                         android:orientation="horizontal">
                         <TextView
-                            android:id="@+id/textViewUsserMail"
+                            android:id="@+id/setting_notification_sustem_noti"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thông báo hệ thống"
+                            android:text="@string/setting_notification_sustem_noti"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="18dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
                     <LinearLayout
                         android:id="@+id/setting_logout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView6"
+                            android:id="@+id/setting_notification_noti_noti_pushup"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thông báo bật lên"
+                            android:text="@string/setting_notification_noti_noti_pushup"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="14dp"/>
+                            android:textSize="14sp"/>
 
                         <View
                             android:layout_width="0dp"
@@ -94,23 +96,28 @@
 
                        <Switch
                            android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"/>                   </LinearLayout>
+                           android:layout_height="wrap_content"
+                           android:minWidth="48dp"
+                           android:minHeight="48dp"
+                           tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/setting_notification_noti_from_email"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thông báo qua email"
+                            android:text="@string/setting_notification_noti_from_email"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="14dp"/>
+                            android:textSize="14sp"/>
                         <View
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -118,39 +125,70 @@
 
                         <Switch
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginEnd="25dp"
                         android:orientation="horizontal">
                         <TextView
+                            android:id="@+id/setting_notification_effect"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Hiệu ứng thông báo"
+                            android:text="@string/setting_notification_effect"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="18dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/setting_notification_ring"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Báo rung"
+                            android:text="@string/setting_notification_ring"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="14dp" />
+                            android:textSize="14sp" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/setting_notification_blink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_notification_blink"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="14sp" />
                         <View
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -158,34 +196,11 @@
 
                         <Switch
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="25dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView8"
-                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nhấp nháp ánh sáng"
-                            android:textColor="@color/black"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="14dp" />
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1" />
-
-                        <Switch
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
                     </LinearLayout>
-
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>

@@ -28,7 +28,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         public TaskViewHolder(View itemView) {
             super(itemView);
             radioButton = itemView.findViewById(R.id.radioButton);
-            editTextTask = itemView.findViewById(R.id.editTextTask);
+            editTextTask = itemView.findViewById(R.id.item_todolist);
         }
     }
 

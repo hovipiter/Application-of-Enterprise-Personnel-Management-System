@@ -3,27 +3,21 @@ package com.example.dacn;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class salary_detail_page extends AppCompatActivity {
     // thanh dashboard
     AppCompatImageView imgbtnnotification, imgdrawer, imgback;
     // navigation bottom
     ImageView home, task, person, setting;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.salary_detail_page);
+
         findviewbyid_salary();
         openObject_salary();
 
@@ -39,7 +33,6 @@ public class salary_detail_page extends AppCompatActivity {
         imgback = findViewById(R.id.dashboard_back_img);
     }
     public void openObject_salary(){
-
         //navigation bottom bar
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +81,5 @@ public class salary_detail_page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

@@ -18,23 +18,24 @@
             android:layout_height="170dp"
             android:orientation="vertical">
             <ImageView
+                android:contentDescription="@string/description"
                 android:id="@+id/setting_back_img"
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:src="@drawable/back_setting" />
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/setting_language_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cài đặt ngôn ngữ"
-                android:layout_gravity="left"
+                android:text="@string/setting_language_title"
+                android:layout_gravity="start"
                 android:layout_marginTop="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:textColor="@color/white"
-                android:textSize="24dp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
@@ -43,10 +44,11 @@
             android:orientation="vertical">
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/bottom_gb_for_user_page"
@@ -56,35 +58,35 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginEnd="25dp"
                         android:orientation="horizontal">
                         <TextView
-                            android:id="@+id/textViewUsserMail"
+                            android:id="@+id/setting_language_language"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ngôn ngữ"
+                            android:text="@string/setting_language_language"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="18dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
                     <LinearLayout
                         android:id="@+id/setting_logout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
                         <TextView
-                            android:id="@+id/textView6"
+                            android:id="@+id/setting_language_language_spinner"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ngôn ngữ"
+                            android:text="@string/setting_language_language_spinner"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="14dp"/>
+                            android:textSize="14sp"/>
                         <View
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -92,45 +94,48 @@
                         <Spinner
                             android:id="@+id/setting_spinner_language"
                             android:layout_width="wrap_content"
-                            android:layout_gravity="right"
-                            android:gravity="right"
+                            android:layout_gravity="end"
+                            android:gravity="end"
                             android:layout_height="wrap_content" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginEnd="25dp"
                         android:orientation="horizontal">
                         <TextView
+                            android:id="@+id/setting_language_font"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Phông chữ"
+                            android:text="@string/setting_language_font"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="18dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
                     <LinearLayout
                         android:id="@+id/linearFont"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
                         <TextView
+                            android:id="@+id/setting_language_change_fontstyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Đổi phông chữ"
+                            android:text="@string/setting_language_change_fontstyle"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="14dp" />
+                            android:textSize="14sp" />
                         <View
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1" />
                         <ImageView
+                            android:contentDescription="@string/description"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:background="@drawable/forward" />
@@ -139,22 +144,24 @@
                         android:id="@+id/linearFontSize"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginRight="25dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
                         <TextView
+                            android:id="@+id/setting_language_change_fontsize"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Đổi cỡ chữ"
+                            android:text="@string/setting_language_change_fontsize"
                             android:textColor="@color/black"
                             android:layout_gravity="center_vertical"
-                            android:textSize="14dp" />
+                            android:textSize="14sp" />
                         <View
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1" />
                         <ImageView
+                            android:contentDescription="@string/description"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:background="@drawable/forward" />

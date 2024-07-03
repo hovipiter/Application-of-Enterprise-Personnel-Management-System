@@ -14,11 +14,12 @@
         android:orientation="vertical"
         android:padding="20dp">
         <TextView
+            android:id="@+id/forgot_pass_page_forgotpass"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Quên mật khẩu"
+            android:text="@string/forgot_pass_page_forgotpass"
             android:textColor="@color/black"
-            android:textSize="28dp"
+            android:textSize="28sp"
             android:layout_marginBottom="22dp"
             android:paddingBottom="25dp"
             android:textStyle="bold"
@@ -30,31 +31,31 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/forgot_pass_page_username_inpput"
             android:textColor="@color/black"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:background="@drawable/rounded_corner"
             android:padding="16dp"
             android:inputType="text"
             android:layout_marginTop="32dp"
-            android:id="@+id/username_input"/>
+            android:id="@+id/forgot_pass_page_username_inpput"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Đặt lại mật khẩu"
+            android:text="@string/forgot_pass_page_button_reset"
             android:textStyle="bold"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:backgroundTint="@color/teal"
             android:layout_marginTop="16dp"
-            android:id="@+id/sign_in_button"
+            android:id="@+id/forgot_pass_page_button_reset"
             android:padding="12dp"/>
         <TextView
-            android:id="@+id/tvsignin"
+            android:id="@+id/forgot_pass_page_textview_signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đăng nhập"
+            android:text="@string/forgot_pass_page_textview_signin"
             android:textColor="@color/black"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:layout_marginTop="32dp"/>
     </LinearLayout>
 </RelativeLayout>

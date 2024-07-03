@@ -45,7 +45,7 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.Employ
 
         EmployeeViewHolder(@NonNull View itemView) {
             super(itemView);
-            employeeName = itemView.findViewById(R.id.employee_name);
+            employeeName = itemView.findViewById(R.id.employee_page_employee_name);
         }
     }
 }

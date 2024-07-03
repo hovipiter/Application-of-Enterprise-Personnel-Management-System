@@ -19,23 +19,24 @@ android:layout_height="match_parent">
         android:layout_height="170dp"
         android:orientation="vertical">
         <ImageView
+            android:contentDescription="@string/description"
             android:id="@+id/setting_back_img"
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:layout_gravity="left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:src="@drawable/back_setting" />
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/setting_page_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
-            android:layout_gravity="left"
+            android:text="@string/setting_page_title"
+            android:layout_gravity="start"
             android:layout_marginTop="80dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:textColor="@color/white"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -45,10 +46,11 @@ android:layout_height="match_parent">
         android:orientation="vertical">
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/bottom_gb_for_user_page"
@@ -58,43 +60,44 @@ android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="25dp"
                 android:orientation="horizontal">
                 <TextView
-                    android:id="@+id/textViewUsserMail"
+                    android:id="@+id/setting_page_account"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tài khoản"
+                    android:text="@string/setting_page_account"
                     android:textColor="@color/black"
                     android:layout_gravity="center_vertical"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
             </LinearLayout>
                 <LinearLayout
                     android:id="@+id/setting_logout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:id="@+id/imageViewDateofBirth"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/logout" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/setting_page_logout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Đăng xuất"
+                        android:text="@string/setting_page_logout"
                         android:textColor="@color/black"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_gravity="center_vertical"
-                        android:textSize="14dp"/>
+                        android:textSize="14sp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -102,6 +105,7 @@ android:layout_height="match_parent">
                         android:layout_weight="1" />
 
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/forward" />
@@ -111,11 +115,12 @@ android:layout_height="match_parent">
                     android:id="@+id/setting_deletAccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
                     android:orientation="horizontal">
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -126,19 +131,22 @@ android:layout_height="match_parent">
                         app:layout_constraintVertical_bias="0.173"
                         android:background="@drawable/delete" />
                     <TextView
+                        android:id="@+id/setting_page_delete_account"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Xóa tài khoản"
+                        android:text="@string/setting_page_delete_account"
                         android:textColor="@color/black"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_gravity="center_vertical"
-                        android:textSize="14dp"/>
+                        android:textSize="14sp"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/forward" />
@@ -146,27 +154,29 @@ android:layout_height="match_parent">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/settring_page_general_information"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Thông tin chung"
+                        android:text="@string/settring_page_general_information"
                         android:textColor="@color/black"
                         android:layout_gravity="center_vertical"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/linearNotification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
                     android:orientation="horizontal">
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:id="@+id/imageView4"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -178,20 +188,21 @@ android:layout_height="match_parent">
                         app:layout_constraintVertical_bias="0.173"
                         app:srcCompat="@drawable/notification" />
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/setting_page_notification"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Thông báo"
+                        android:text="@string/setting_page_notification"
                         android:textColor="@color/black"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_gravity="center_vertical"
-                        android:textSize="14dp" />
+                        android:textSize="14sp" />
                     <View
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/forward" />
@@ -200,11 +211,12 @@ android:layout_height="match_parent">
                     android:id="@+id/linearLanguage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
                     android:orientation="horizontal">
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:id="@+id/imageView9"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -216,20 +228,21 @@ android:layout_height="match_parent">
                         app:layout_constraintVertical_bias="0.173"
                         app:srcCompat="@drawable/foreign" />
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/setting_page_language"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ngôn ngữ"
+                        android:text="@string/setting_page_language"
                         android:textColor="@color/black"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_gravity="center_vertical"
-                        android:textSize="14dp" />
+                        android:textSize="14sp" />
                     <View
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/forward" />
@@ -237,14 +250,16 @@ android:layout_height="match_parent">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
                     android:orientation="horizontal">
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:id="@+id/imageView3"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
+                        android:layout_gravity="center"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -253,14 +268,14 @@ android:layout_height="match_parent">
                         app:layout_constraintVertical_bias="0.173"
                         app:srcCompat="@drawable/nightmode" />
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/setting_page_darkmode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Chế độ tối"
+                        android:text="@string/setting_page_darkmode"
                         android:textColor="@color/black"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_gravity="center_vertical"
-                        android:textSize="14dp" />
+                        android:textSize="14sp"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -268,32 +283,38 @@ android:layout_height="match_parent">
 
                     <Switch
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        tools:ignore="UseSwitchCompatOrMaterialXml"
+                        />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/setting_page_about_application"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Về ứng dụng"
+                        android:text="@string/setting_page_about_application"
                         android:textColor="@color/black"
                         android:layout_gravity="center_vertical"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
                     android:orientation="horizontal">
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:id="@+id/imageView5"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -305,20 +326,21 @@ android:layout_height="match_parent">
                         app:layout_constraintVertical_bias="0.173"
                         app:srcCompat="@drawable/help" />
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/setting_page_help"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Trợ giúp"
+                        android:text="@string/setting_page_help"
                         android:textColor="@color/black"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_gravity="center_vertical"
-                        android:textSize="14dp" />
+                        android:textSize="14sp" />
                     <View
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/forward" />
@@ -327,11 +349,12 @@ android:layout_height="match_parent">
                 <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="25dp"
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal">
                 <ImageView
+                    android:contentDescription="@string/description"
                     android:id="@+id/imageView8"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -343,20 +366,21 @@ android:layout_height="match_parent">
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/information" />
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/setting_page_delete_about"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Thông tin ứng dụng"
+                    android:text="@string/setting_page_delete_about"
                     android:textColor="@color/black"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
                     <View
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <ImageView
+                        android:contentDescription="@string/description"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/forward" />

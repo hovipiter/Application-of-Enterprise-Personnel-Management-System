@@ -8,10 +8,11 @@
     android:gravity="start">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/bottom_gb_for_user_page"
@@ -39,15 +40,16 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/mail" />
                 <EditText
-                    android:id="@+id/textViewUsserMail"
+                    android:id="@+id/profile_component_edited_page_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="user@gmail.com"
+                    android:autofillHints="profile_component_edited_page_email"
+                    android:hint="@string/profile_component_edited_page_email"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,15 +70,15 @@
                     app:layout_constraintVertical_bias="0.173"
                     android:background="@drawable/cake" />
                 <EditText
-                    android:id="@+id/textView6"
+                    android:id="@+id/profile_component_edited_page_date_of_birth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Date of birth"
+                    android:hint="@string/profile_component_edited_page_date_of_birth"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp"/>
+                    android:textSize="14sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -97,15 +99,15 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/gender" />
                 <EditText
-                    android:id="@+id/textView4"
+                    android:id="@+id/profile_component_edited_page_gender"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Giới tính"
+                    android:hint="@string/profile_component_edited_page_gender"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -126,15 +128,15 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/assert_phone" />
                 <EditText
-                    android:id="@+id/textView8"
+                    android:id="@+id/profile_component_edited_page_phone_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Phone number"
+                    android:hint="@string/profile_component_edited_page_phone_number"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -158,15 +160,15 @@
                     app:srcCompat="@drawable/assert_location" />
 
                 <EditText
-                    android:id="@+id/textView3"
+                    android:id="@+id/profile_component_edited_page_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:background="@drawable/no_underline_for_edt"
-                    android:hint="Địa chỉ"
-                    android:paddingLeft="50dp"
+                    android:hint="@string/profile_component_edited_page_address"
+                    android:layout_marginStart="50dp"
                     android:textColor="@color/black"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -188,15 +190,15 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/idetitycard" />
                 <EditText
-                    android:id="@+id/textView5"
+                    android:id="@+id/profile_component_edited_page_idcard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="CCCD"
+                    android:hint="@string/profile_component_edited_page_idcard"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -217,25 +219,25 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/national" />
                 <EditText
-                    android:id="@+id/textView7"
+                    android:id="@+id/profile_component_edited_page_nationality"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Quốc tịch"
+                    android:hint="@string/profile_component_edited_page_nationality"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
                 <EditText
-                    android:id="@+id/textView12"
+                    android:id="@+id/profile_component_edited_page_national"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Dân tộc"
+                    android:hint="@string/profile_component_edited_page_national"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -256,15 +258,15 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/foreign" />
                 <EditText
-                    android:id="@+id/textView9"
+                    android:id="@+id/profile_component_edited_page_language_proficiency"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Trình độ ngoại ngữ"
+                    android:hint="@string/profile_component_edited_page_language_proficiency"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -285,15 +287,15 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/day" />
                 <EditText
-                    android:id="@+id/textView10"
+                    android:id="@+id/profile_component_edited_page_start_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Ngày bắt đầu vào làm"
+                    android:hint="@string/profile_component_edited_page_start_date"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -314,15 +316,15 @@
                     app:layout_constraintVertical_bias="0.173"
                     app:srcCompat="@drawable/department" />
                 <EditText
-                    android:id="@+id/textView11"
+                    android:id="@+id/profile_component_edited_page_department"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Bộ phận"
+                    android:hint="@string/profile_component_edited_page_department"
                     android:background="@drawable/no_underline_for_edt"
                     android:textColor="@color/black"
-                    android:paddingLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:layout_gravity="center_vertical"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -333,12 +335,13 @@
                 android:gravity="center"
                 android:orientation="horizontal">
                 <Button
+                    android:id="@+id/profile_component_edited_page_save_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:paddingHorizontal="55dp"
-                    android:paddingLeft="0dp"
-                    android:text="Save"
+                    android:text="@string/profile_component_edited_page_save_btn"
+                    android:textSize="14sp"
                     android:backgroundTint="@color/teal" />
             </LinearLayout>
             <LinearLayout

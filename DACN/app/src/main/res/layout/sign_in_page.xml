@@ -18,11 +18,12 @@
             android:orientation="vertical"
             android:padding="20dp">
             <TextView
+                android:id="@+id/signin_title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Đăng nhập"
+                android:text="@string/signin_title"
                 android:textColor="@color/black"
-                android:textSize="28dp"
+                android:textSize="28sp"
                 android:layout_marginBottom="22dp"
                 android:paddingBottom="25dp"
                 android:textStyle="bold"
@@ -35,44 +36,44 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Tên đăng nhập"
+                android:hint="@string/signin_username_input"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:background="@drawable/rounded_corner"
                 android:padding="16dp"
                 android:inputType="text"
                 android:layout_marginTop="32dp"
-                android:id="@+id/username_input"/>
+                android:id="@+id/signin_username_input"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mật khẩu"
+                android:hint="@string/signin_password_input"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:background="@drawable/rounded_corner"
                 android:padding="16dp"
                 android:inputType="text"
                 android:layout_marginTop="16dp"
-                android:id="@+id/password_input"/>
+                android:id="@+id/signin_password_input"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign in"
+                android:text="@string/signin_button_signin"
                 android:textStyle="bold"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:backgroundTint="@color/teal"
                 android:layout_marginTop="16dp"
-                android:id="@+id/sign_in_button"
+                android:id="@+id/signin_button_signin"
                 android:padding="12dp"/>
             <TextView
-                android:id="@+id/tvforgotpass"
+                android:id="@+id/signin_forgotpass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quên mật khẩu?"
+                android:text="@string/signin_forgotpass"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:layout_marginTop="32dp"/>
         </LinearLayout>
     </ScrollView>

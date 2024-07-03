@@ -14,7 +14,7 @@ public class forgot_pass extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.forgot_pass_page);
         
-        signin = findViewById(R.id.tvsignin);
+        signin = findViewById(R.id.forgot_pass_page_textview_signin);
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

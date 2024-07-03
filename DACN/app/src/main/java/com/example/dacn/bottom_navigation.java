@@ -45,5 +45,4 @@ public class bottom_navigation extends AppCompatActivity {
             }
         });
     }
-
 }

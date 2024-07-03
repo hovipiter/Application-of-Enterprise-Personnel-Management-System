@@ -24,7 +24,7 @@ public class profile_page extends AppCompatActivity {
         openObject_profile();
     }
     void findviewbyid_profile(){
-        edituser = findViewById(R.id.btnEditUser);
+        edituser = findViewById(R.id.profile_component_edit_btn);
         // navigation bottom bar
         home = findViewById(R.id.nav_home_icon);
         task = (ImageView) findViewById(R.id.nav_task_icon);

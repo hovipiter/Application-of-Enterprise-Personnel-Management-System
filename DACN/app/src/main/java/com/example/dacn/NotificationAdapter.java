@@ -44,9 +44,9 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            textview_Notititle = itemView.findViewById(R.id.item_tv_notititle);
-            textview_Noticontent = itemView.findViewById(R.id.item_tv_noticontent);
-            textview_Notiday = itemView.findViewById(R.id.item_tv_notiday);
+            textview_Notititle = itemView.findViewById(R.id.notification_item_page_title_noti);
+            textview_Noticontent = itemView.findViewById(R.id.notification_item_page_content);
+            textview_Notiday = itemView.findViewById(R.id.notification_item_page_day);
         }
     }
 }

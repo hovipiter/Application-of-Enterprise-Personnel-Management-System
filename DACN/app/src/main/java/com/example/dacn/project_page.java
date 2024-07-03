@@ -27,12 +27,11 @@ public class project_page extends AppCompatActivity {
         setContentView(R.layout.project_page);
 
         List<Project> projectList = new ArrayList<Project>();
-        projectList.add(new Project("Project 1","Tạo dự án mới về xây dựng website","Thời gian còn lại", "5 ngày"));
-        projectList.add(new Project("Project 1","Tạo dự án mới về xây dựng website","Thời gian còn lại", "5 ngày"));
-        projectList.add(new Project("Project 1","Tạo dự án mới về xây dựng website","Thời gian còn lại", "5 ngày"));
-        projectList.add(new Project("Project 1","Tạo dự án mới về xây dựng website","Thời gian còn lại", "5 ngày"));
-        projectList.add(new Project("Project 1","Tạo dự án mới về xây dựng website","Thời gian còn lại", "5 ngày"));
-
+        projectList.add(new Project("Project name","Create website","Timeleft", "5 days"));
+        projectList.add(new Project("Project name","Create website","Timeleft", "5 days"));
+        projectList.add(new Project("Project name","Create website","Timeleft", "5 days"));
+        projectList.add(new Project("Project name","Create website","Timeleft", "5 days"));
+        projectList.add(new Project("Project name","TCreate website","Timeleft", "5 days"));
 
         projectRecycleView = findViewById(R.id.rcv_projectlist);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -47,7 +46,7 @@ public class project_page extends AppCompatActivity {
     }
     void findviewbyid_project(){
         // project page
-        newTask = findViewById(R.id.btnNewtask);
+        newTask = findViewById(R.id.project_page_new_task_btn);
         // navigation bottom bar
         home = findViewById(R.id.nav_home_icon);
         task = (ImageView) findViewById(R.id.nav_task_icon);

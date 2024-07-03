@@ -42,61 +42,61 @@
                         android:orientation="vertical"
                         android:layout_marginTop="10dp"
                         tools:ignore="MissingConstraints">
-
                         <TextView
+                            android:id="@+id/nghiphep_page_leave_request"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Đơn xin nghỉ"
+                            android:text="@string/nghiphep_page_leave_request"
                             android:gravity="center"
-                            android:textSize="30dp"
+                            android:textSize="28sp"
                             android:textStyle="bold" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingRight="12dp"
                             android:weightSum="5"
                             android:orientation="horizontal">
 
                             <TextView
+                                android:id="@+id/nghiphep_page_time"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="2"
-                                android:text="Thời gian"
-                                android:textSize="20dp"
+                                android:text="@string/nghiphep_page_time"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
-
                             <EditText
-                                android:id="@+id/date"
+                                android:id="@+id/nghiphep_page_get_time"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:clickable="false"
                                 android:layout_weight="3"
                                 android:cursorVisible="false"
                                 android:focusable="false"
-                                android:hint="1/1/2000"
+                                android:hint="@string/nghiphep_page_get_time"
                                 android:gravity="end"
                                 android:padding="12dp"
-                                android:textSize="20sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
 
                         <TextView
+                            android:id="@+id/nghiphep_page_reason"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Lý do"
-                            android:textSize="18dp"
+                            android:text="@string/nghiphep_page_reason"
+                            android:textSize="14sp"
                             android:layout_marginBottom="5dp"
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/lydo"
+                            android:id="@+id/nghiphep_page_reason_input"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/boder_for_edt"
                             android:minLines="8"
-                            android:gravity="left"
+                            android:gravity="end"
                             android:padding="12dp"
                             android:textSize="14sp" />
 
@@ -109,38 +109,41 @@
                             android:orientation="horizontal">
 
                             <TextView
+                                android:id="@+id/nghiphep_page_proof"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Minh chứng (nếu có)"
+                                android:text="@string/nghiphep_page_proof"
                                 android:paddingVertical="10dp"
                                 android:layout_weight="1"
-                                android:textSize="15dp" />
+                                android:textSize="14sp" />
 
                             <ImageButton
-                                android:layout_width="200px"
-                                android:layout_height="100px"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/upload" />
                         </LinearLayout>
 
                         <EditText
-                            android:id="@+id/edt_minhchung"
+                            android:id="@+id/nghiphep_page_file_upload"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="  File tải lên"
+                            android:hint="@string/nghiphep_page_file_upload"
                             android:background="@drawable/boder_for_edt"
                             android:minLines="3"
+                            android:paddingHorizontal="10dp"
                             android:layout_marginTop="5dp"
                             android:textSize="15sp" />
 
                         <Button
+                            android:id="@+id/nghiphep_page_submit"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nộp đơn"
+                            android:text="@string/nghiphep_page_submit"
                             android:layout_marginTop="10dp"
-                            android:textSize="18dp"
+                            android:textSize="14sp"
                             android:backgroundTint="@color/teal"
-                            android:layout_gravity="right"/>
+                            android:layout_gravity="end"/>
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,9 +8,7 @@
     app:cardCornerRadius="12dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    android:layout_marginBottom="10dp"
-    >
-
+    android:layout_marginBottom="10dp">
     <LinearLayout
         android:paddingLeft="10dp"
         android:layout_width="match_parent"
@@ -17,41 +16,35 @@
         android:orientation="vertical"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
-        android:layout_gravity="center_horizontal"
-        >
+        android:layout_gravity="center_horizontal">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:weightSum="11"
-            >
+            android:weightSum="11">
             <TextView
-                android:id="@+id/itemtv_forumtitle"
-                android:layout_width="wrap_content"
+                android:id="@+id/forum_item_title"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center_vertical"
-                android:text="Title"
+                android:text="@string/forum_item_title"
                 android:textSize="20sp"
                 android:layout_weight="10"/>
-
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <TextView
-                android:id="@+id/itemtv_forumcontent"
+                android:id="@+id/forum_item_content"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="8"
                 android:gravity="start"
-                android:text="Nội dung của bài viết thảo luận đó"
+                android:text="@string/forum_item_content"
                 android:textSize="15sp" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,42 +59,37 @@
                     android:layout_height="20dp"
                     android:src="@drawable/like3"/>
                 <TextView
-                    android:id="@+id/itemtv_forumlike"
+                    android:id="@+id/forum_item_like"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="50dp"
-                    android:text="Thích"/>
-
+                    android:paddingStart="5dp"
+                    android:paddingEnd="50dp"
+                    android:text="@string/forum_item_like"/>
                 <ImageButton
                     android:id="@+id/itemimgbtn_forumcmt"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/comment3"/>
                 <TextView
-                    android:id="@+id/itemtv_forumcmt"
+                    android:id="@+id/forum_item_comment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="50dp"
-                    android:text="Bình luận"/>
-
+                    android:paddingStart="5dp"
+                    android:paddingEnd="50dp"
+                    android:text="@string/forum_item_comment"/>
                 <ImageButton
                     android:id="@+id/itemimgbtn_forumshare"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/share"/>
                 <TextView
-                    android:id="@+id/itemtv_forumshare"
+                    android:id="@+id/forum_item_share"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:text="Chia sẻ"/>
-
+                    android:paddingStart="5dp"
+                    android:text="@string/forum_item_share"
+                    tools:ignore="RtlSymmetry" />
             </LinearLayout>
-
         </LinearLayout>
-
-
     </LinearLayout>
 </androidx.cardview.widget.CardView>

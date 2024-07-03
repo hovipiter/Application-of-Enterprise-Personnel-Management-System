@@ -18,23 +18,24 @@
             android:layout_height="170dp"
             android:orientation="vertical">
             <ImageView
+                android:contentDescription="@string/description"
                 android:id="@+id/setting_back_img"
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:src="@drawable/back_setting" />
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/setting_fontsize_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cài đặt ngôn ngữ"
-                android:layout_gravity="left"
+                android:text="@string/setting_fontsize_title"
+                android:layout_gravity="start"
                 android:layout_marginTop="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:textColor="@color/white"
-                android:textSize="24dp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
@@ -45,7 +46,8 @@
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    tools:ignore="UselessParent">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -53,12 +55,12 @@
                         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
                         <TextView
-                            android:id="@+id/selectFontTextView"
+                            android:id="@+id/setting_fontsize_selectfont"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="30dp"
+                            android:layout_marginStart="30dp"
                             android:fontFamily="sans-serif"
-                            android:text="Chọn cỡ chữ"
+                            android:text="@string/setting_fontsize_selectfont"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -73,27 +75,34 @@
                             android:layout_marginBottom="20dp">
 
                             <RadioButton
+                                android:id="@+id/radioVerySmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/radioVerySmall"
+                                android:textSize="12sp"
+                                android:fontFamily="sans-serif"/>
+                            <RadioButton
                                 android:id="@+id/radioSmall"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Nhỏ"
-                                android:textSize="18sp"
+                                android:text="@string/radioSmall"
+                                android:textSize="20sp"
                                 android:fontFamily="sans-serif"/>
 
                             <RadioButton
                                 android:id="@+id/radioMedium"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Vừa"
-                                android:textSize="24sp"
+                                android:text="@string/radioMedium"
+                                android:textSize="28sp"
                                 android:fontFamily="sans-serif"/>
 
                             <RadioButton
                                 android:id="@+id/radioBig"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Lớn"
-                                android:textSize="30sp"
+                                android:text="@string/radioBig"
+                                android:textSize="36sp"
                                 android:fontFamily="sans-serif"/>
                         </RadioGroup>
                     </LinearLayout>
