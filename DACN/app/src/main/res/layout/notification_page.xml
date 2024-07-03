@@ -11,14 +11,15 @@
     <LinearLayout
         android:id="@+id/top"
         android:layout_width="match_parent"
+        android:padding="5dp"
         android:layout_height="wrap_content"
         android:background="@drawable/top_bg_for_setting_page"
         android:orientation="horizontal"
         tools:ignore="MissingConstraints">
         <ImageView
-            android:id="@+id/setting_back_img"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/notification_back_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@drawable/back_setting"/>
         <TextView
             android:id="@+id/notification_page_title"

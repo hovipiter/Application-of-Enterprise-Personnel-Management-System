@@ -37,8 +37,8 @@
                         <ImageView
                             android:contentDescription="@string/description"
                             android:id="@+id/imgProject"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/assert_project"
                             android:layout_gravity="center_horizontal"/>
                         <TextView
@@ -72,8 +72,8 @@
                         <ImageView
                             android:contentDescription="@string/description"
                             android:id="@+id/imgChamCong"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/assert_note"
                             android:layout_gravity="center_horizontal"/>
                         <TextView
@@ -106,8 +106,8 @@
                         <ImageView
                             android:contentDescription="@string/description"
                             android:id="@+id/imgNghiPhep"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/assert_calendar"
                             android:layout_gravity="center_horizontal"/>
                         <TextView
@@ -140,8 +140,8 @@
                         <ImageView
                             android:contentDescription="@string/description"
                             android:id="@+id/imgBangLuong"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/assert_salary"
                             android:layout_gravity="center_horizontal"/>
                         <TextView
@@ -174,8 +174,8 @@
                         <ImageView
                             android:contentDescription="@string/description"
                             android:id="@+id/imgPhongBan"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/assert_apartment"
                             android:layout_gravity="center_horizontal"/>
                         <TextView
@@ -209,8 +209,8 @@
                         <ImageView
                             android:contentDescription="@string/description"
                             android:id="@+id/imgHopDong"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/assert_contact_calender"
                             android:layout_gravity="center_horizontal"/>
                         <TextView
@@ -243,8 +243,8 @@
                         <ImageView
                             android:contentDescription="@string/description"
                             android:id="@+id/imgForum"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/assert_newspaper"
                             android:layout_gravity="center_horizontal"/>
                         <TextView
@@ -277,8 +277,8 @@
                         <ImageView
                             android:contentDescription="@string/description"
                             android:id="@+id/imgChinhSach"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/assert_workload"
                             android:layout_gravity="center_horizontal"/>
                         <TextView

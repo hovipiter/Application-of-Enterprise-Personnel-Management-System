@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     CardView  chamcong, salary, nghiphep, contract, department, forum, chinhsach;
     CardView project;
     // thanh dashboard
-    AppCompatImageView imgbtnnotification, imgdrawer, imgback;
+    AppCompatImageView imgbtnnotification, imgback;
     // navigation bottom
     ImageView home, task, person, setting;
     TextView welcome1, welcome2;

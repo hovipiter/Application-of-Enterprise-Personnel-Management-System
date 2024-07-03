@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -19,7 +20,7 @@ public class project_page extends AppCompatActivity {
     Button newTask;
     private RecyclerView projectRecycleView;
     // thanh dashboard
-    AppCompatImageView imgbtnnotification, imgdrawer, imgback;
+    AppCompatImageView imgbtnnotification, imgback;
     // navigation bottom
     ImageView home, task, person, setting;
     protected void onCreate(Bundle savedInstanceState) {

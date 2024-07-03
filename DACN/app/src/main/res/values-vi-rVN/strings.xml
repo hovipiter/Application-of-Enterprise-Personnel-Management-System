@@ -1,0 +1,237 @@
+<resources>
+    <string name="app_name">BlueWave</string>
+    <string name="description">description</string>
+    <!---file mainactivity-->
+    <string name="main_welcome1_textview">Xin chào!</string>
+    <string name="main_welcome2_textview">Hãy lên lịch cho dự án của bạn!</string>
+    <string name="main_acti_textview_project">Dự án</string>
+    <string name="main_acti_textview_timekeepping">Chấm công</string>
+    <string name="main_acti_textview_absence">Nghỉ phép</string>
+    <string name="main_acti_textview_salary">Lương</string>
+    <string name="main_acti_textview_employee">Nhân viên</string>
+    <string name="main_acti_textview_contract">Hợp đồng</string>
+    <string name="main_acti_textview_forum">Diễn đàn</string>
+    <string name="main_acti_textview_policy">Chính sách</string>
+    <!---file login-->
+    <string name="signin_title">ĐĂNG NHẬP</string>
+    <string name="signin_username_input">Tên đăng nhập</string>
+    <string name="signin_password_input">Mật khẩu </string>
+    <string name="signin_button_signin">Đăng nhập</string>
+    <string name="signin_forgotpass">Quên mật khẩu?</string>
+    <!---page forgot pass-->
+    <string name="forgot_pass_page_forgotpass">ĐẶT LẠI MẬT KHẨU</string>
+    <string name="forgot_pass_page_username_inpput">Tên đăng nhập</string>
+    <string name="forgot_pass_page_button_reset">Đặt lại</string>
+    <string name="forgot_pass_page_textview_signin">Đăng nhập</string>
+    <!---setting page-->
+    <string name="setting_page_title">Cài đặt</string>
+    <string name="setting_page_account">Tài khoản</string>
+    <string name="setting_page_logout">Đăng xuất</string>
+    <string name="setting_page_delete_account">Xóa tài khoản</string>
+    <string name="settring_page_general_information">Thông tin chung</string>
+    <string name="setting_page_notification">Thông báo</string>
+    <string name="setting_page_language">Ngôn ngữ</string>
+    <string name="setting_page_darkmode">Chế độ tối</string>
+    <string name="setting_page_about_application">Thông tin về ứng dụng</string>
+    <string name="setting_page_help">Giúp đỡ</string>
+    <string name="setting_page_delete_about">Về ứng dụng</string>
+    <!---setting notification page-->
+    <string name="setting_notification_title">Cài đặt thông báo</string>
+    <string name="setting_notification_sustem_noti">Thông báo hệ thống</string>
+    <string name="setting_notification_noti_noti_pushup">Thông báo đẩy lên</string>
+    <string name="setting_notification_noti_from_email">Thông báo qua email</string>
+    <string name="setting_notification_effect">Hiệu ứng thông báo</string>
+    <string name="setting_notification_ring">Rung</string>
+    <string name="setting_notification_blink">Nhấp nháy ánh sáng</string>
+    <!---setting notification page-->
+    <string name="setting_language_title">Cài đặt ngôn ngữ</string>
+    <string name="setting_language_language">Ngôn ngữ</string>
+    <string name="setting_language_language_spinner"> Ngôn ngữ</string>
+    <string name="setting_language_font">Phông chữ</string>
+    <string name="setting_language_change_fontstyle">Phông chữ</string>
+    <string name="setting_language_change_fontsize">Cỡ chữ</string>
+    <!---setting fontsize page-->
+    <string name="setting_fontsize_title">Cài đặt ngôn ngữ</string>
+    <string name="setting_fontsize_selectfont">Chọn cỡ chữ</string>
+    <string name="radioVerySmall">Rất nhỏ</string>
+    <string name="radioSmall">Nhỏ</string>
+    <string name="radioMedium">Vừa</string>
+    <string name="radioBig">Lớn</string>
+    <!---setting font page-->
+    <string name="setting_font_title">Cài đặt ngôn ngữ</string>
+    <string name="setting_font_select_font">Chọn phông chữ</string>
+    <string name="radioOpen_sans">Open-sans</string>
+    <string name="radioDancing">Dancing</string>
+    <string name="radioComfortaa">Comfortaa</string>
+    <!---salary search page-->
+    <string name="salary_search_page_time">Tháng 12, 2023</string>
+    <string name="salary_search_page_salary">Lương</string>
+    <string name="salary_search_page_time_number">+3.000.000</string>
+    <string name="salary_search_page_award">Thưởng</string>
+    <string name="salary_search_page_award_number">+3.000.000</string>
+    <string name="salary_search_page_assist">Phụ cấp</string>
+    <string name="salary_search_page_assist_number">+3.000.000</string>
+    <string name="salary_search_page_assurance">Bảo hiểm</string>
+    <string name="salary_search_page_assurance_number">+3.000.000</string>
+    <string name="salary_search_page_tax">Thuế</string>
+    <string name="salary_search_page_tax_number">+3.000.000</string>
+    <string name="salary_search_page_other">Khác</string>
+    <string name="salary_search_page_other_number">+3.000.000</string>
+    <string name="salary_search_page_sum">Tổng</string>
+    <string name="salary_search_page_sum_number">+3.000.000</string>
+    <string name="salary_search_page_receive">Đã lãnh vào ngày .../.../...</string>
+    <!---salary detail page-->
+    <string name="salary_detail_page_time">Tháng 12, 2023</string>
+    <string name="salary_detail_page_salary">Lương</string>
+    <string name="salary_detail_page_salary_number">+3.000.000</string>
+    <string name="salary_detail_page_award">Thưởng</string>
+    <string name="salary_detail_page_award_number">+3.000.000</string>
+    <string name="salary_detail_page_assist">Phụ cấp</string>
+    <string name="salary_detail_page_assist_number">+3.000.000</string>
+    <string name="salary_detail_page_assurance">Bảo hiểm</string>
+    <string name="salary_detail_page_assurance_number">+3.000.000</string>
+    <string name="salary_detail_page_tax">Thuế</string>
+    <string name="salary_detail_page_tax_number">+3.000.000</string>
+    <string name="salary_detail_page_other">Khác</string>
+    <string name="salary_detail_page_other_number">+3.000.000</string>
+    <string name="salary_detail_page_sum">Tổng</string>
+    <string name="salary_detail_page_sum_number">+3.000.000</string>
+    <string name="salary_detail_page_receive">Đã lãnh vào ngày .../.../...</string>
+    <!---salary page -->
+    <string name="salary_page_title">Năm nay</string>
+    <string name="salary_page_salary">Lương</string>
+    <string name="salary_page_salary_number">+3.000.000</string>
+    <string name="salary_page_award">Thưởng</string>
+    <string name="salary_page_award_number">+3.000.000</string>
+    <string name="salary_page_sum">Tổng</string>
+    <string name="salary_page_sum_number">9.000.000</string>
+    <string name="salary_page_search">Tra cứu trong 12 tháng gần nhất</string>
+    <string name="salary_page_month">Tháng</string>
+    <string name="salary_page_month_number">12</string>
+    <string name="salary_page_year">Năm</string>
+    <string name="salary_page_year_number">2019</string>
+    <string name="salary_page_search_btn">Tìm kiếm</string>
+    <!---project page -->
+    <string name="project_page_new_task_btn">Nhiệm vụ mới</string>
+    <string name="project_page_number1">13</string>
+    <string name="project_page_all_project">Tất cả dự án</string>
+    <string name="project_page_number2">3</string>
+    <string name="project_page_unfinished">Dự án chưa hoàn thành</string>
+    <string name="project_page_number3">10</string>
+    <string name="project_page_finish">Dự án đã hoàn thành</string>
+    <string name="project_page_list_project">Danh sách dự án</string>
+    <string name="project_page_item_title">Tên dự án</string>
+    <string name="project_page_item_content">Tạo website</string>
+    <string name="project_page_item_timeleft">Thời gian còn lại</string>
+    <string name="project_page_item_gettimeleft"> 5 ngày</string>
+    <!---project detail page -->
+    <string name="project_detail_page_project_name">Tên dự án</string>
+    <string name="project_detail_page_edit_btn">Chỉnh sửa</string>
+    <string name="project_detail_page_start_day">Ngày bắt đầu</string>
+    <string name="project_detail_page_get_startday">1/1/2020</string>
+    <string name="project_detail_page_end_day">Ngày kết thúc</string>
+    <string name="project_detail_page_get_end_day">3/4/2020</string>
+    <string name="project_detail_page_timeleft">Thời gian còn lại</string>
+    <string name="project_detail_page_get_timeleft">5 ngày</string>
+    <string name="project_detail_page_member">Thành viên trong dự án</string>
+    <string name="project_detail_page_describe_title">Mô tả dự án</string>
+    <string name="project_detail_page_describe_content">Nội dung báo cáo</string>
+    <string name="project_detail_page_task">Nhiệm vụ</string>
+    <string name="item_todolist">Nhập</string>
+    <!---project detail edit page-->
+    <string name="project_detail_edit_page_project_name">Tên dự án</string>
+    <string name="project_detail_edit_page_save_btn">Lưu</string>
+    <string name="project_detail_edit_page_start_day">Ngày bắt đầu</string>
+    <string name="project_detail_edit_page_get_startday">1/1/2020</string>
+    <string name="project_detail_edit_page_end_day">Ngày kết thúc</string>
+    <string name="project_detail_edit_page_get_end_day">3/4/2020</string>
+    <string name="project_detail_edit_page_timeleft">Thời gian còn lại</string>
+    <string name="project_detail_edit_page_get_timeleft">5 ngày</string>
+    <string name="project_detail_edit_page_member">Thành viên trong dự án</string>
+    <string name="project_detail_edit_page_describe_title">Mô tả dự án</string>
+    <string name="project_detail_edit_page_describe_content">Nội dung báo cáo</string>
+    <string name="project_detail_detail_page_task">Nhiệm vụ</string>
+    <string name="project_detail_edit_page_add_task">Thêm</string>
+
+    <!---profile page -->
+    <string name="profile_page_username_title">Tên nhân viên</string>
+    <string name="profile_page_ID">Mã nhân viên</string>
+    <string name="profile_page_position">Vị trí</string>
+
+    <string name="profile_component_email">user@gmail.com</string>
+    <string name="profile_component_date_of_birth">Ngày sinh</string>
+    <string name="profile_component_gender">Giới tính</string>
+    <string name="profile_component_phone_number">Số điện thoại</string>
+    <string name="profile_component_address">Địa chỉ</string>
+    <string name="profile_component_id_card">Số CMND</string>
+    <string name="profile_component_nationality">Quốc tịch</string>
+    <string name="profile_component_national">Dân tộc</string>
+    <string name="profile_component_foreign_proficiency">Trình độ ngoại ngữ</string>
+    <string name="profile_component_start_date">Ngày bắt đầu vào làm</string>
+    <string name="profile_component_department">Bộ phận</string>
+    <string name="profile_component_edit_btn">Chỉnh sửa thông tin cá nhân</string>
+
+    <string name="profile_edited_page_username_title">Tên nhân viên</string>
+    <string name="profile_edited_page_ID">Mã nhân viên</string>
+    <string name="profile_edited_page_position">Vị trí</string>
+
+    <string name="profile_component_edited_page_email">user@gmail.com</string>
+    <string name="profile_component_edited_page_date_of_birth">Ngày sinh</string>
+    <string name="profile_component_edited_page_gender">Giới tính</string>
+    <string name="profile_component_edited_page_phone_number">Số điện thoại</string>
+    <string name="profile_component_edited_page_address">Địa chỉ</string>
+    <string name="profile_component_edited_page_idcard">Số CMND</string>
+    <string name="profile_component_edited_page_nationality">Quốc tịch</string>
+    <string name="profile_component_edited_page_national">Dân tộc</string>
+    <string name="profile_component_edited_page_language_proficiency">Trình độ ngoại ngữ</string>
+    <string name="profile_component_edited_page_start_date">Ngày bắt đầu vào làm</string>
+    <string name="profile_component_edited_page_department">Bộ phận</string>
+    <string name="profile_component_edited_page_save_btn">Lưu</string>
+
+    <string name="notification_page_title">Thông báo</string>
+    <string name="notification_item_page_title_noti">Tiêu đề</string>
+    <string name="notification_item_page_content">Nộ dung thông báo</string>
+    <string name="notification_item_page_day">dd//mm//yy</string>
+
+    <!---nghiphep page -->
+    <string name="nghiphep_page_leave_request">Đơn xin nghỉ phép</string>
+    <string name="nghiphep_page_time">Thời gian nghỉ</string>
+    <string name="nghiphep_page_get_time">20/10/2022</string>
+    <string name="nghiphep_page_reason">Lý do</string>
+    <string name="nghiphep_page_proof">Minh chứng (nếu có)</string>
+    <string name="nghiphep_page_file_upload">Tải file</string>
+    <string name="nghiphep_page_submit">Nộp đơn</string>
+
+    <string name="forum_page_title">DIỄN ĐÀN</string>
+    <string name="forum_page_search">Tìm kiếm</string>
+    <string name="forum_page_create_post">Tạo bài viết mới</string>
+    <string name="forum_item_title">Tiêu đề</string>
+    <string name="forum_item_content">Nội dung thảo luận</string>
+    <string name="forum_item_like">Thích</string>
+    <string name="forum_item_comment">Bình luận</string>
+    <string name="forum_item_share">Chia sẻ</string>
+    <string name="forum_created_title_page">Bài viết mới</string>
+    <string name="forum_created_title_edit_text">Tiêu đề</string>
+    <string name="forum_created_content">Nhập tại đây</string>
+    <string name="forum_created_post_btn">Đăng bài</string>
+
+    <!--employee page -->
+    <string name="emploee_page_title">Danh sách nhân viên</string>
+    <string name="employee_page_employee_name">Tên nhân viên</string>
+    <!---Cham cong page-->
+    <string name="chamcong_page_nghiphep">Nghỉ phép</string>
+    <string name="chamcong_page_diemdanh">Điểm danh</string>
+    <string name="chamcong_page_location">Vị trí</string>
+    <string name="chamcong_page_nhandien">Nhận diện</string>
+
+    <string name="dashboard_setting">Cài đặt</string>
+    <string name="dashboard_person">Cá nhân</string>
+    <string name="dashboard_task">Nhiệm vụ</string>
+    <string name="dashboard_home">Trang chủ</string>
+    <string name="salary_page_detail">Chi tiết</string>
+
+    <string-array name="spinner_items">
+        <item>Tiếng Việt</item>
+        <item>Tiếng Anh</item>
+    </string-array>
+</resources>
