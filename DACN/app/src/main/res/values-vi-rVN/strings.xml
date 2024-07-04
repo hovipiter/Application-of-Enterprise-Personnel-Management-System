@@ -230,6 +230,8 @@
     <string name="dashboard_home">Trang chủ</string>
     <string name="salary_page_detail">Chi tiết</string>
 
+    <string name="signin_staffID_input">Mã nhân viên</string>
+
     <string-array name="spinner_items">
         <item>Tiếng Việt</item>
         <item>Tiếng Anh</item>
