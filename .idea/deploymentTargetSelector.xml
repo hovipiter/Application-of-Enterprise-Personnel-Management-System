@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="DACN.app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-06-07T13:05:39.547348200Z">
+        <DropdownSelection timestamp="2024-07-05T15:03:55.380899600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="PhysicalDevice" identifier="serial=e10b1a3a" />

@@ -5,6 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.vishnusivadas.advanced_httpurlconnection.FetchData;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -12,6 +21,9 @@ import androidx.cardview.widget.CardView;
 
 public class profile_page extends AppCompatActivity {
     Button edituser;
+
+    TextView textViewStaffID, textViewUsername, textViewPosition, textViewDateOfBirth,
+            textViewGender, textViewPhoneNumber, textViewIDCard, textViewNationality, textViewStatus;
 
     // navigation bottom
     ImageView home, task, person, setting;
@@ -22,7 +34,38 @@ public class profile_page extends AppCompatActivity {
 
         findviewbyid_profile();
         openObject_profile();
+
+        // Lấy staffid từ SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+        String staffid = sharedPreferences.getString("staffid", null);
+        // Gọi trang PHP để lấy thông tin từ server
+        String url = "http://192.168.37.163/usermanagement/get_user_info.php?staffid=" + staffid;
+        FetchData fetchData = new FetchData(url);
+        if (fetchData.startFetch()) {
+            if (fetchData.onComplete()) {
+                String result = fetchData.getResult();
+                try {
+                    JSONObject jsonObject = new JSONObject(result);
+                    textViewStaffID.setText(jsonObject.getString("staffid"));
+                    textViewUsername.setText(jsonObject.getString("username"));
+                    textViewPosition.setText(jsonObject.getString("position"));
+                    textViewDateOfBirth.setText(jsonObject.getString("dateofbirth"));
+                    textViewGender.setText(jsonObject.getString("gender"));
+                    textViewPhoneNumber.setText(jsonObject.getString("phonenumber"));
+                    textViewIDCard.setText(jsonObject.getString("idcard"));
+                    textViewNationality.setText(jsonObject.getString("nationality"));
+                    textViewStatus.setText(jsonObject.getString("status"));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "Error parsing user data", Toast.LENGTH_SHORT).show();
+                }
+            }
+        } else {
+            Toast.makeText(getApplicationContext(), "Failed to fetch data", Toast.LENGTH_SHORT).show();
+        }
     }
+
+    // ngoài oncreate
     void findviewbyid_profile(){
         edituser = findViewById(R.id.profile_component_edit_btn);
         // navigation bottom bar
@@ -30,7 +73,17 @@ public class profile_page extends AppCompatActivity {
         task = (ImageView) findViewById(R.id.nav_task_icon);
         person = findViewById(R.id.nav_person_icon);
         setting = findViewById(R.id.nav_settings_icon);
-        // dashboard
+        // profile
+        textViewStaffID = findViewById(R.id.profile_page_ID);
+        textViewUsername = findViewById(R.id.profile_page_username_title);
+        textViewPosition = findViewById(R.id.profile_page_position);
+        textViewDateOfBirth = findViewById(R.id.profile_component_date_of_birth);
+        textViewGender = findViewById(R.id.profile_component_gender);
+        textViewPhoneNumber = findViewById(R.id.profile_component_phone_number);
+        textViewIDCard = findViewById(R.id.profile_component_id_card);
+        textViewNationality = findViewById(R.id.profile_component_nationality);
+        textViewStatus = findViewById(R.id.profile_component_status);
+
     }
     void openObject_profile(){
         edituser.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +112,7 @@ public class profile_page extends AppCompatActivity {
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(profile_page.this, project_page.class);
+                Intent intent = new Intent(profile_page.this, setting_page.class);
                 startActivity(intent);
             }
         });

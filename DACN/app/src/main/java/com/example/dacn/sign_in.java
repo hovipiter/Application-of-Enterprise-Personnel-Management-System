@@ -12,8 +12,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.SharedPreferences;
 
+import androidx.appcompat.app.AppCompatActivity;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class sign_in extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class sign_in extends AppCompatActivity {
     EditText editTextsignin_password_input, editTextsignin_staffID_input;
     Button buttonsignin_button_signin;
     ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +71,12 @@ public class sign_in extends AppCompatActivity {
                                     String result = putData.getResult();
                                     Log.d("LOGIN", "Result: " + result);  // Log the server response
                                     if (result.equals("Login Success")) {
+
+                                        SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                                        editor.putString("staffid", staffid);
+                                        editor.apply();
+
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                         startActivity(intent);

@@ -234,6 +234,8 @@
     <string name="forgot_pass_page_staffID_input">Staff ID</string>
     <string name="forgot_pass_page_email_input">Email</string>
     <string name="splash_text">Blue wave\n</string>
+    <string name="profile_component_status">Status</string>
+    <string name="profile_component_edited_page_Status">Status</string>
 
     <string-array name="spinner_items">
         <item>Vietnamese</item>
