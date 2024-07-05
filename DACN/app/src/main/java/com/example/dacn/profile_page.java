@@ -25,8 +25,8 @@ public class profile_page extends AppCompatActivity {
     TextView textViewStaffID, textViewUsername, textViewPosition, textViewDateOfBirth, textViewNation,
             textViewGender, textViewPhoneNumber, textViewAddress, textViewIDCard,
             textViewNationality, textViewStatus
-            , textViewLanguage, textViewStartDate, textViewEmail;
-       //     textViewDepartment;
+            , textViewLanguage, textViewStartDate, textViewEmail,textViewDepartment;
+       //     ,textViewDepartment;
 
     // navigation bottom
     ImageView home, task, person, setting;
@@ -62,7 +62,7 @@ public class profile_page extends AppCompatActivity {
 
                     textViewLanguage.setText(jsonObject.getString("languages"));
                     textViewStartDate.setText(jsonObject.getString("startdate"));
-        //          textViewDepartment.setText(jsonObject.getString("department"));
+                  textViewDepartment.setText(jsonObject.getString("department"));
 
                     textViewStatus.setText(jsonObject.getString("status"));
 
@@ -103,7 +103,7 @@ public class profile_page extends AppCompatActivity {
 
         textViewLanguage = findViewById(R.id.profile_component_foreign_proficiency);
         textViewStartDate = findViewById(R.id.profile_component_start_date);
-//     textViewDepartment = findViewById(R.id.profile_component_department);
+        textViewDepartment = findViewById(R.id.profile_component_department);
         textViewEmail = findViewById(R.id.profile_component_email);
     }
     void openObject_profile(){
