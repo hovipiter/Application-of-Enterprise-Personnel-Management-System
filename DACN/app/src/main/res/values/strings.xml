@@ -233,6 +233,7 @@
     <string name="forgot_pass_staffID_input">Staff ID</string>
     <string name="forgot_pass_page_staffID_input">Staff ID</string>
     <string name="forgot_pass_page_email_input">Email</string>
+    <string name="splash_text">Blue wave\n</string>
 
     <string-array name="spinner_items">
         <item>Vietnamese</item>

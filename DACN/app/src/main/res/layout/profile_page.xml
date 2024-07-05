@@ -12,7 +12,6 @@
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/navigation_bottom">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:background="@drawable/top_bg_for_user_page"

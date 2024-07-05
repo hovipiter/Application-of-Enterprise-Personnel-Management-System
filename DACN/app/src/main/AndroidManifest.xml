@@ -36,8 +36,9 @@
         <activity android:name=".profile_edited"/>
         <activity android:name=".MainActivity"/>
         <activity android:name=".forgot_pass"/>
+        <activity android:name=".sign_in"/>
         <activity
-            android:name=".sign_in"
+            android:name=".splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
