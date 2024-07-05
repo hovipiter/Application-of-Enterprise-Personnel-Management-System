@@ -22,8 +22,11 @@ import androidx.cardview.widget.CardView;
 public class profile_page extends AppCompatActivity {
     Button edituser;
 
-    TextView textViewStaffID, textViewUsername, textViewPosition, textViewDateOfBirth,
-            textViewGender, textViewPhoneNumber, textViewIDCard, textViewNationality, textViewStatus;
+    TextView textViewStaffID, textViewUsername, textViewPosition, textViewDateOfBirth, textViewNation,
+            textViewGender, textViewPhoneNumber, textViewAddress, textViewIDCard,
+            textViewNationality, textViewStatus
+            , textViewLanguage, textViewStartDate;
+       //     textViewDepartment;
 
     // navigation bottom
     ImageView home, task, person, setting;
@@ -51,10 +54,21 @@ public class profile_page extends AppCompatActivity {
                     textViewPosition.setText(jsonObject.getString("position"));
                     textViewDateOfBirth.setText(jsonObject.getString("dateofbirth"));
                     textViewGender.setText(jsonObject.getString("gender"));
+
+                    textViewAddress.setText(jsonObject.getString("address"));
+
                     textViewPhoneNumber.setText(jsonObject.getString("phonenumber"));
                     textViewIDCard.setText(jsonObject.getString("idcard"));
                     textViewNationality.setText(jsonObject.getString("nationality"));
+                    textViewNation.setText(jsonObject.getString("nation"));
+
+                    textViewLanguage.setText(jsonObject.getString("languages"));
+                    textViewStartDate.setText(jsonObject.getString("startdate"));
+        //          textViewDepartment.setText(jsonObject.getString("department"));
+
                     textViewStatus.setText(jsonObject.getString("status"));
+
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Error parsing user data", Toast.LENGTH_SHORT).show();
@@ -82,7 +96,16 @@ public class profile_page extends AppCompatActivity {
         textViewPhoneNumber = findViewById(R.id.profile_component_phone_number);
         textViewIDCard = findViewById(R.id.profile_component_id_card);
         textViewNationality = findViewById(R.id.profile_component_nationality);
+        textViewNation = findViewById(R.id.profile_component_national);
         textViewStatus = findViewById(R.id.profile_component_status);
+
+        textViewAddress = findViewById(R.id.profile_component_address);
+
+        textViewLanguage = findViewById(R.id.profile_component_foreign_proficiency);
+        textViewStartDate = findViewById(R.id.profile_component_start_date);
+//     textViewDepartment = findViewById(R.id.profile_component_department);
+
+
 
     }
     void openObject_profile(){

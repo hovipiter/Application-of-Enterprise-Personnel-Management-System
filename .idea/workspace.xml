@@ -197,14 +197,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4069348b-b201-447c-9cf0-634cc55deb8c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/sign_in.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/sign_in.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/profile_component.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/profile_component.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/profile_component_edited.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/profile_component_edited.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/values-vi-rVN/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/values-vi-rVN/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
