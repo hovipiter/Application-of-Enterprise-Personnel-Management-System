@@ -6,7 +6,9 @@ Application of Enterprise Personnel Management System
 - Để thực hiện reset password bằng cách gửi mail dùng smtp server thì ta phải cài đặt như sau:
 - Vào cmd -> nhập đường dẫn xampp\htdocs\usermanagement -> mkdir phpmailer -> composer require phpmailer/phpmailer
 Tạo file Database.php có nội dung như sau:
-<?php
+<pre>
+    ```php
+    <?php
 require "DataBaseConfig.php";
 class DataBase
 {
@@ -92,6 +94,11 @@ class DataBase
     }
 }
 ?>
+    
+    ```
+    
+</pre>
+
 
 File DataBaseConfig có nội dung như sau:
 <?php
