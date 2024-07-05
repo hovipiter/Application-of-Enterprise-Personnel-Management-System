@@ -15,7 +15,86 @@ Tạo file Database.php có nội dung như sau:
 require "DataBaseConfig.php";
 class DataBase
 {
-    // Nội dung của lớp DataBase...
+    public $connect;
+    public $data;
+    private $sql;
+    protected $servername;
+    protected $username;
+    protected $password;
+    protected $databasename;
+
+    public function __construct()
+    {
+        $this->connect = null;
+        $this->data = null;
+        $this->sql = null;
+        $dbc = new DataBaseConfig();
+        $this->servername = $dbc->servername;
+        $this->username = $dbc->username;
+        $this->password = $dbc->password;
+        $this->databasename = $dbc->databasename;
+    }
+
+    function dbConnect()
+    {
+        $this->connect = mysqli_connect($this->servername, $this->username, $this->password, $this->databasename);
+        return $this->connect;
+    }
+
+    function prepareData($data)
+    {
+        return mysqli_real_escape_string($this->connect, stripslashes(htmlspecialchars($data)));
+    }
+
+    function logIn($table, $staffid, $password)
+    {
+        $staffid = $this->prepareData($staffid);
+        $password = $this->prepareData($password);
+        $this->sql = "SELECT * FROM " . $table . " WHERE staffid = '" . $staffid . "' AND password = '" . $password . "'";
+        $result = mysqli_query($this->connect, $this->sql);
+
+        if (mysqli_num_rows($result) != 0) {
+            return true;  // Login successful
+        } else {
+            return false; // Incorrect password or staff ID
+        }
+    }
+
+    public function forgotPassword($table, $staffid, $email)
+    {
+        $username = $this->prepareData($staffid);
+        $email = $this->prepareData($email);
+        $this->sql = "SELECT * FROM " . $table . " WHERE staffid = '" . $staffid . "' AND email = '" . $email . "'";
+        $result = mysqli_query($this->connect, $this->sql);
+        if (mysqli_num_rows($result) != 0) {
+            $newPassword = $this->generateRandomPassword();
+            $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+            $updateSql = "UPDATE " . $table . " SET password = '" . $hashedPassword . "' WHERE staffid = '" . $staffid . "'";
+            if (mysqli_query($this->connect, $updateSql)) {
+                if ($this->sendEmail($email, $newPassword)) {
+                    return true;
+                } else {
+                    return false; // Email sending failed
+                }
+            } else {
+                return false; // Password update failed
+            }
+        } else {
+            return false; // Staff ID or email not found
+        }
+    }
+
+    private function generateRandomPassword($length = 8)
+    {
+        return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
+    }
+    private function sendEmail($email, $newPassword)
+    {
+        $subject = "Your New Password";
+        $message = "Your new password is: " . $newPassword;
+        $headers = "From: no-reply@yourdomain.com";
+        return mail($email, $subject, $message, $headers);
+    }
 }
 ?>
 ```
