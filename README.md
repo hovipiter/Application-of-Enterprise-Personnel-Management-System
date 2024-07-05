@@ -7,6 +7,7 @@ Application of Enterprise Personnel Management System
 - Tải về composer tại trang web [https://getcomposer.org/download/](https://getcomposer.org/download/)
 - Vào cmd -> nhập đường dẫn xampp\htdocs\usermanagement -> mkdir phpmailer -> composer require phpmailer/phpmailer
 Tạo file Database.php có nội dung như sau:
+- Nguồn tham khảo [](https://www.youtube.com/watch?v=X8oD4q3XtQQ)
 
 ### DataBase.php
 
