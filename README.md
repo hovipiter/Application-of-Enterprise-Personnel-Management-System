@@ -99,9 +99,9 @@ class DataBase
 ?>
 ```
 
+### DataBaseConfig.php
 
-
-File DataBaseConfig có nội dung như sau:
+```php
 <?php
 
 class DataBaseConfig
@@ -119,8 +119,9 @@ class DataBaseConfig
         $this->databasename = 'usermanager';}
 }
 ?>
-
-File login.php có nội dung như sau:
+```
+### login.php
+```php
 <?php
 require "DataBase.php";
 $db = new DataBase();
@@ -133,7 +134,9 @@ if (isset($_POST['password']) && isset($_POST['staffid'])) {
 } else echo "All fields are required";
 ?>
 
-File forgot_password có nội dung như sau:
+```
+### forgor_password.php
+```php
 <?php
 require "DataBase.php";
 require 'vendor/autoload.php';
@@ -213,4 +216,4 @@ if (isset($_POST['staffid']) && isset($_POST['email'])) {
 }
 file_put_contents('debug.log', print_r($_POST, true), FILE_APPEND);
 ?>
-
+```
