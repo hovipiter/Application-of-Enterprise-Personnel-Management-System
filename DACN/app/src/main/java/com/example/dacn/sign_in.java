@@ -75,6 +75,9 @@ public class sign_in extends AppCompatActivity {
                                         SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
                                         SharedPreferences.Editor editor = sharedPreferences.edit();
                                         editor.putString("staffid", staffid);
+                                        //giữ cho trạng thái đăng nhập
+                                        editor.putBoolean("isLoggedIn", true); // Set isLoggedIn to true
+
                                         editor.apply();
 
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();

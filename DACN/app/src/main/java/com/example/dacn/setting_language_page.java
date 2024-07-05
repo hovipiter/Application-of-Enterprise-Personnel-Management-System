@@ -26,7 +26,7 @@ public class setting_language_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        sharedPreferences = getSharedPreferences("Settings", MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
         String language = sharedPreferences.getString("My_Lang", "en");
         setLocale(language);
 

@@ -198,8 +198,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4069348b-b201-447c-9cf0-634cc55deb8c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_edited.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_edited.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/setting_font_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/setting_font_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/setting_language_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/setting_language_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/sign_in.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/sign_in.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/splash.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

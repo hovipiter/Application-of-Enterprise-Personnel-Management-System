@@ -5,6 +5,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -24,6 +25,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.mainactivity);
         findviewbyid();
         openObject();
+
+        // Check if user is logged in
+        SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+        boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);
+
+        if (!isLoggedIn) {
+            // Redirect to login page
+            Intent intent = new Intent(this, sign_in.class);
+            startActivity(intent);
+            finish(); // Close MainActivity to prevent going back
+        }
     }
 
     void findviewbyid(){
