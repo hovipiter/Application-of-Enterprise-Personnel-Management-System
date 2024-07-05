@@ -25,7 +25,7 @@ public class profile_page extends AppCompatActivity {
     TextView textViewStaffID, textViewUsername, textViewPosition, textViewDateOfBirth, textViewNation,
             textViewGender, textViewPhoneNumber, textViewAddress, textViewIDCard,
             textViewNationality, textViewStatus
-            , textViewLanguage, textViewStartDate;
+            , textViewLanguage, textViewStartDate, textViewEmail;
        //     textViewDepartment;
 
     // navigation bottom
@@ -54,9 +54,7 @@ public class profile_page extends AppCompatActivity {
                     textViewPosition.setText(jsonObject.getString("position"));
                     textViewDateOfBirth.setText(jsonObject.getString("dateofbirth"));
                     textViewGender.setText(jsonObject.getString("gender"));
-
                     textViewAddress.setText(jsonObject.getString("address"));
-
                     textViewPhoneNumber.setText(jsonObject.getString("phonenumber"));
                     textViewIDCard.setText(jsonObject.getString("idcard"));
                     textViewNationality.setText(jsonObject.getString("nationality"));
@@ -67,6 +65,8 @@ public class profile_page extends AppCompatActivity {
         //          textViewDepartment.setText(jsonObject.getString("department"));
 
                     textViewStatus.setText(jsonObject.getString("status"));
+
+                    textViewEmail.setText(jsonObject.getString("email"));
 
 
                 } catch (JSONException e) {
@@ -104,9 +104,7 @@ public class profile_page extends AppCompatActivity {
         textViewLanguage = findViewById(R.id.profile_component_foreign_proficiency);
         textViewStartDate = findViewById(R.id.profile_component_start_date);
 //     textViewDepartment = findViewById(R.id.profile_component_department);
-
-
-
+        textViewEmail = findViewById(R.id.profile_component_email);
     }
     void openObject_profile(){
         edituser.setOnClickListener(new View.OnClickListener() {
@@ -139,7 +137,5 @@ public class profile_page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }
