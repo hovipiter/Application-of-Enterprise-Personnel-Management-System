@@ -230,6 +230,9 @@
     <string name="dashboard_home">Home</string>
     <string name="salary_page_detail">Detail</string>
     <string name="signin_staffID_input">Staff ID</string>
+    <string name="forgot_pass_staffID_input">Staff ID</string>
+    <string name="forgot_pass_page_staffID_input">Staff ID</string>
+    <string name="forgot_pass_page_email_input">Email</string>
 
     <string-array name="spinner_items">
         <item>Vietnamese</item>
