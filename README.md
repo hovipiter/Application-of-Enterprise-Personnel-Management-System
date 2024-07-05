@@ -1,9 +1,10 @@
 # Application-of-Enterprise-Personnel-Management-System
 Application of Enterprise Personnel Management System
 
-# Các file cho việc đăng nhập đăng ký
+### Các file cho việc đăng nhập đăng ký
 - Trong thư mục xampp\htdocs tự tạo folder usermanagement (folder này chứa các file sau: )
 - Để thực hiện reset password bằng cách gửi mail dùng smtp server thì ta phải cài đặt như sau:
+- Tải về composer tại trang web [https://getcomposer.org/download/](https://getcomposer.org/download/)
 - Vào cmd -> nhập đường dẫn xampp\htdocs\usermanagement -> mkdir phpmailer -> composer require phpmailer/phpmailer
 Tạo file Database.php có nội dung như sau:
 
