@@ -7,8 +7,8 @@ Application of Enterprise Personnel Management System
 - Vào cmd -> nhập đường dẫn xampp\htdocs\usermanagement -> mkdir phpmailer -> composer require phpmailer/phpmailer
 Tạo file Database.php có nội dung như sau:
 <pre>
-    ```php
-    <?php
+    ```
+<?php
 require "DataBaseConfig.php";
 class DataBase
 {
