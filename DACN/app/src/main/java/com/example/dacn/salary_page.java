@@ -5,8 +5,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -27,6 +29,7 @@ public class salary_page extends AppCompatActivity {
     ImageView home, task, person, setting;
     Button searchbtn;
     TextView textViewStartDay, textViewReceiveDay;
+    EditText editTextMonth, editTextYear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,9 @@ public class salary_page extends AppCompatActivity {
         textViewStartDay = findViewById(R.id.salary_detail_page_startday);
         textViewReceiveDay = findViewById(R.id.salary_detail_page_receive_day);
 
+        editTextMonth = findViewById(R.id.salary_page_month_number);
+        editTextYear = findViewById(R.id.salary_page_year_number);
+
         home = findViewById(R.id.nav_home_icon);
         task = findViewById(R.id.nav_task_icon);
         person = findViewById(R.id.nav_person_icon);
@@ -58,6 +64,10 @@ public class salary_page extends AppCompatActivity {
 
         imgbtnnotification = findViewById(R.id.ib_noti);
         imgback = findViewById(R.id.dashboard_back_img);
+
+
+
+
     }
 
     public void openObject_salary() {
@@ -66,9 +76,20 @@ public class salary_page extends AppCompatActivity {
 //            startActivity(intent);
 //        });
 
-        searchbtn.setOnClickListener(v -> {
-            Intent intent = new Intent(salary_page.this, salary_search_page.class);
-            startActivity(intent);
+        searchbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String month = editTextMonth.getText().toString();
+                String year = editTextYear.getText().toString();
+                if (!month.isEmpty() && !year.isEmpty()) {
+                    Intent intent = new Intent(salary_page.this, salary_detail_page.class);
+                    intent.putExtra("month", month);
+                    intent.putExtra("year", year);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(salary_page.this, "Please enter month and year", Toast.LENGTH_SHORT).show();
+                }
+            }
         });
 
         home.setOnClickListener(v -> {

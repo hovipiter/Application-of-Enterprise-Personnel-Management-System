@@ -251,6 +251,11 @@
     <string name="salary_page_other_fee_number">+0</string>
     <string name="salary_detail_page_receive_day">dd/mm/yy</string>
     <string name="salary_detail_page_startday">Salary from date</string>
+    <string name="contract_page_title">Department contact information</string>
+    <string name="contract_page_name_department">Department Name</string>
+    <string name="contract_page_phone_number">Phone Number</string>
+    <string name="contract_page_name_department_item">Department A</string>
+    <string name="contract_page_phone_number_item">0123456273</string>
 
     <string-array name="spinner_items">
         <item>Tiếng Việt</item>
