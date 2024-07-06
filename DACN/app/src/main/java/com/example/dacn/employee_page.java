@@ -2,16 +2,29 @@ package com.example.dacn;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +42,7 @@ public class employee_page extends AppCompatActivity {
     private EmployeeAdapter employeeAdapter;
 
     private List<Employee> employeeList;
-    private List<Department> departmentList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,59 +51,64 @@ public class employee_page extends AppCompatActivity {
         findviewbyid_apartment();
         openObject_apartment();
 
-        // Initialize data
-        initializeData();
-
-        // Set up RecyclerView
-        employeeAdapter = new EmployeeAdapter(employeeList); // Set initial list to show all employees
+        employeeRecyclerView.setHasFixedSize(true);
         employeeRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         employeeRecyclerView.setAdapter(employeeAdapter);
 
-        // Set up Spinner
-        List<String> departmentNames = new ArrayList<>();
-        departmentNames.add("All Departments"); // Option to show all employees
-        departmentNames.addAll(departmentList.stream().map(Department::getName).collect(Collectors.toList()));
-
-        ArrayAdapter<String> departmentAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, departmentNames);
-        departmentAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        departmentSpinner.setAdapter(departmentAdapter);
-
-        // Spinner item selected listener
-        departmentSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String selectedDepartment = departmentNames.get(position);
-                if (selectedDepartment.equals("All Departments")) {
-                    employeeAdapter.setEmployeeList(employeeList);
-                } else {
-                    List<Employee> filteredEmployees = employeeList.stream()
-                            .filter(employee -> employee.getDepartment().equals(selectedDepartment))
-                            .collect(Collectors.toList());
-                    employeeAdapter.setEmployeeList(filteredEmployees);
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                // Do nothing
-            }
-        });
-    }
-
-    private void initializeData() {
-        // Sample data
-        departmentList = new ArrayList<>();
-        departmentList.add(new Department("HR"));
-        departmentList.add(new Department("IT"));
-        departmentList.add(new Department("Finance"));
-
         employeeList = new ArrayList<>();
-        employeeList.add(new Employee("John Doe", "HR"));
-        employeeList.add(new Employee("Jane Smith", "IT"));
-        employeeList.add(new Employee("Mike Johnson", "Finance"));
-        employeeList.add(new Employee("Sarah Williams", "HR"));
-        employeeList.add(new Employee("Tom Brown", "IT"));
+
+        LoadAllEmployee();
+
     }
+    private void LoadAllEmployee() {
+        // Define the URL for the PHP script
+        String url = "http://192.168.37.163/usermanagement/fetch_employee.php";
+
+//  Create the JsonArrayRequest
+        JsonArrayRequest request = new JsonArrayRequest(
+                Request.Method.GET,
+                url,
+                null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        // Handle the JSON response here
+                        try {
+                            for (int i = 0; i < response.length(); i++) {
+                                JSONObject employee = response.getJSONObject(i);
+                                String username = employee.getString("username");
+                                String department = employee.getString("department");
+
+                                Employee emplyee = new Employee();
+                                emplyee.setName(username);
+                                emplyee.setDepartment(department);
+                                employeeList.add(emplyee);
+
+                                // Use the retrieved data (e.g., display it in the UI)
+                                Log.d("EmployeeData", "Username: " + username + ", Department: " + department);
+
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        employeeAdapter = new EmployeeAdapter(employee_page.this, employeeList);
+                        employeeRecyclerView.setAdapter(employeeAdapter);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // Handle the error here
+                        Toast.makeText(employee_page.this, "Error", Toast.LENGTH_SHORT).show();
+                        error.printStackTrace();
+                    }
+                }
+        );
+
+        RequestQueue requestQueue = Volley.newRequestQueue(employee_page.this);
+        requestQueue.add(request);
+    }
+
     void findviewbyid_apartment(){
         // navigation bottom bar
         home = findViewById(R.id.nav_home_icon);

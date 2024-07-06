@@ -238,9 +238,15 @@
     <string name="splash_text">Blue wave\n</string>
     <string name="profile_component_status">Trạng thái</string>
     <string name="profile_component_edited_page_Status">Trạng thái</string>
-    <string name="chamcong_page_done">Done</string>
-    <string name="chamcong_camera_upload">Upload Image</string>
-    <string name="nghiphep_page_NumberOfDayOff">Number of day off</string>
+    <string name="chamcong_page_done">Hoàn thành</string>
+    <string name="chamcong_camera_upload">Tải ảnh lên</string>
+    <string name="nghiphep_page_NumberOfDayOff">Số ngày nghỉ</string>
+    <string name="chamcong_camera_button_takepicture_again">Chụp lại ảnh</string>
+    <string name="chamcong_camera_button_delete">Delete</string>
+    <string name="employee_page_department_name">Department</string>
+    <string name="employee_page_employee_name_title">Name</string>
+    <string name="employee_page_department_name_title">Department</string>
+    <string name="empoyee_page_select_textview">Filter</string>
 
     <string-array name="spinner_items">
         <item>Tiếng Việt</item>

@@ -62,7 +62,7 @@ public class profile_page extends AppCompatActivity {
 
                     textViewLanguage.setText(jsonObject.getString("languages"));
                     textViewStartDate.setText(jsonObject.getString("startdate"));
-                  textViewDepartment.setText(jsonObject.getString("department"));
+                    textViewDepartment.setText(jsonObject.getString("department"));
 
                     textViewStatus.setText(jsonObject.getString("status"));
 

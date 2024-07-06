@@ -12,6 +12,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
@@ -27,6 +28,8 @@ public class chamcong_page extends AppCompatActivity {
     Switch diemDanhSwitch;
     LinearLayout leaveRequestLayout, locationLayout, recogniseLayout;
     TextView leaveRequestTextView;
+
+    private boolean isRecogniseUploaded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +51,10 @@ public class chamcong_page extends AppCompatActivity {
                     leaveRequestTextView.setEnabled(true);
                     nghiphep_imgbtn.setEnabled(true);
                 }
+                updateDoneTextView();
             }
         });
 
-        // nếu 3 cái đều hoàn thành, hiện lên một hình dấu tích
-        // còn nếu chưa hoàn thành thì không được back trở về
         locationLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,23 +62,55 @@ public class chamcong_page extends AppCompatActivity {
             }
         });
 
+        nghiphep_imgbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(chamcong_page.this, nghiphep_page.class);
+                startActivity(intent);
+            }
+        });
+        leaveRequestTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(chamcong_page.this, nghiphep_page.class);
+                startActivity(intent);
+            }
+        });
+
         recogniseLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(chamcong_page.this, chamcong_camera.class);
-                startActivity(intent);
+                startActivityForResult(intent, 3); // Request code 3 for recognise
             }
         });
+        recog_imgbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(chamcong_page.this, chamcong_camera.class);
+                startActivityForResult(intent, 3); // Request code 3 for recognise
+            }
+        });
+
+        location_imgbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openGoogleMaps();
+            }
+        });
+
+        // nếu 3 cái đều hoàn thành, hiện lên một hình dấu tích
+        // còn nếu chưa hoàn thành thì không được back trở về
     }
 
     void findviewbyid_chamcong(){
         // navigation bottom bar
         home = findViewById(R.id.nav_home_icon);
-        task = (ImageView) findViewById(R.id.nav_task_icon);
+        task = findViewById(R.id.nav_task_icon);
         person = findViewById(R.id.nav_person_icon);
         setting = findViewById(R.id.nav_settings_icon);
         // dashboard
-        imgbtnnotification = (AppCompatImageView) findViewById(R.id.ib_noti);
+        imgbtnnotification = findViewById(R.id.ib_noti);
         imgback = findViewById(R.id.dashboard_back_img);
         // chamcong
         nghiphep_imgbtn = findViewById(R.id.Chamcong_nghiphep_imgbtn);
@@ -91,18 +125,12 @@ public class chamcong_page extends AppCompatActivity {
         locationLayout = findViewById(R.id.chamcong_page_location_layout);
         leaveRequestLayout = findViewById(R.id.chamcong_page_leaverequest_layout);
         recogniseLayout = findViewById(R.id.chamcong_page_recognise_layout);
-
     }
 
     void openObject_chamcong(){
         // chamcong
-        nghiphep_imgbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(chamcong_page.this, nghiphep_page.class);
-                startActivity(intent);
-            }
-        });
+        // nghỉ phep
+
         //navigation bottom bar
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -151,7 +179,23 @@ public class chamcong_page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 3 && resultCode == RESULT_OK) {
+            isRecogniseUploaded = true;
+            updateDoneTextView();
+        }
+    }
+
+    private void updateDoneTextView() {
+        if (diemDanhSwitch.isChecked() && isRecogniseUploaded) {
+            textViewDone.setTextColor(getResources().getColor(R.color.green));
+        } else {
+            textViewDone.setTextColor(getResources().getColor(R.color.black));
+        }
     }
 
     private void openGoogleMaps() {
@@ -168,5 +212,4 @@ public class chamcong_page extends AppCompatActivity {
             Toast.makeText(chamcong_page.this, message, Toast.LENGTH_LONG).show();
         }
     }
-
 }
