@@ -5,12 +5,14 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:layout_gravity="bottom"
+    style="@style/background"
     android:elevation="4dp">
     <LinearLayout
         android:id="@+id/nav_home"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        style="@style/background"
         android:orientation="vertical"
         android:gravity="center">
         <ImageView
@@ -23,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dashboard_home"
-            android:textColor="#000000" />
+            style="@style/text" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/nav_task"
@@ -31,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
+        style="@style/background"
         android:gravity="center">
         <ImageView
             android:id="@+id/nav_task_icon"
@@ -41,8 +44,8 @@
             android:id="@+id/dashboard_task"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dashboard_task"
-            android:textColor="#000000" />
+            style="@style/text"
+            android:text="@string/dashboard_task" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/nav_person"
@@ -60,8 +63,8 @@
             android:id="@+id/dashboard_person"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dashboard_person"
-            android:textColor="#000000" />
+            style="@style/text"
+            android:text="@string/dashboard_person" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/nav_settings"
@@ -79,7 +82,7 @@
             android:id="@+id/dashboard_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dashboard_setting"
-            android:textColor="#000000" />
+            style="@style/text"
+            android:text="@string/dashboard_setting" />
     </LinearLayout>
 </LinearLayout>

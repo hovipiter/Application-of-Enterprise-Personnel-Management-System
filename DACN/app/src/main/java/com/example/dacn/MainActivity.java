@@ -1,6 +1,7 @@
 package com.example.dacn;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.cardview.widget.CardView;
 
@@ -19,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     // navigation bottom
     ImageView home, task, person, setting;
     TextView welcome1, welcome2;
+
+    // change mode light dark
+    Boolean mode_status;
+    SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +31,21 @@ public class MainActivity extends AppCompatActivity {
         findviewbyid();
         openObject();
 
+
+
         // Check if user is logged in
         SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
         boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);
+       // AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        sharedPreferences = getSharedPreferences("Settings", MODE_PRIVATE);
+        boolean isDarkModeOn = sharedPreferences.getBoolean("dark_mode", false);
 
+//        // Set default night mode based on SharedPreferences
+        if (isDarkModeOn) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
         if (!isLoggedIn) {
             // Redirect to login page
             Intent intent = new Intent(this, sign_in.class);

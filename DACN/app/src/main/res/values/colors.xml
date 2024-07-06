@@ -17,5 +17,8 @@
     <color name="blue">#0000FF</color>
     <color name="navy">#000080</color>
     <color name="black">#000000</color>
+    <color name="dark">#141218</color>
+    <color name="text_night">#E0E0E0</color>
+    <color name="button_image_night">#8A9ABD</color>
 
 </resources>

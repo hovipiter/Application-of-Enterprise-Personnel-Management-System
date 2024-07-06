@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="5dp"
     app:cardCornerRadius="12dp"
+    style="@style/background"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:layout_marginBottom="10dp">
@@ -29,6 +30,7 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center_vertical"
                 android:text="@string/forum_item_title"
+                style="@style/text"
                 android:textSize="20sp"
                 android:layout_weight="10"/>
         </LinearLayout>
@@ -41,6 +43,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="8"
+                style="@style/text"
                 android:gravity="start"
                 android:text="@string/forum_item_content"
                 android:textSize="15sp" />
@@ -76,6 +79,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="5dp"
                     android:paddingEnd="50dp"
+                    style="@style/text"
                     android:text="@string/forum_item_comment"/>
                 <ImageButton
                     android:id="@+id/itemimgbtn_forumshare"
@@ -88,6 +92,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="5dp"
                     android:text="@string/forum_item_share"
+                    style="@style/text"
                     tools:ignore="RtlSymmetry" />
             </LinearLayout>
         </LinearLayout>

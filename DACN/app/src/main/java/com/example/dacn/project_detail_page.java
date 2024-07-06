@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class project_detail_page extends AppCompatActivity {
-    Button editDetailProject;
+
 
     // thanh dashboard
     AppCompatImageView imgbtnnotification, imgback;
@@ -52,8 +52,7 @@ public class project_detail_page extends AppCompatActivity {
     }
 
     void findviewbyid_project_detail(){
-        // edit page
-        editDetailProject = findViewById(R.id.project_detail_page_edit_btn);
+
         // navigation bottom bar
         home = findViewById(R.id.nav_home_icon);
         task = (ImageView) findViewById(R.id.nav_task_icon);
@@ -66,16 +65,6 @@ public class project_detail_page extends AppCompatActivity {
     }
 
     void openObject_project_detail(){
-        // edit page
-
-        editDetailProject.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(project_detail_page.this, project_detail_edit_page.class);
-                startActivity(intent);
-            }
-        });
-
         //navigation bottom bar
         home.setOnClickListener(new View.OnClickListener() {
             @Override

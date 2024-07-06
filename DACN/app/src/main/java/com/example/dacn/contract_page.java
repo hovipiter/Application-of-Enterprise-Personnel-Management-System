@@ -77,7 +77,7 @@ public class contract_page extends AppCompatActivity {
                                 String phoneNumber = contract.getString("phonenumber");
 
                                 Contract contract_information = new Contract();
-                                contract_information.setName(departmentName); // Sửa thành departmentName
+                                contract_information.setName(departmentName);
                                 contract_information.setPhoneNumber(phoneNumber);
                                 contractList.add(contract_information);
 

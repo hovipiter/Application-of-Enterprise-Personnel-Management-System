@@ -4,12 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/background"
     tools:context=".MainActivity"
     android:gravity="center">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        style="@style/background"
         android:orientation="vertical">
         <ScrollView
             android:layout_width="match_parent"
@@ -46,10 +47,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/main_acti_textview_project"
-                            android:textColor="@color/teal"
+                            style="@style/text"
                             android:layout_gravity="center_horizontal"
-                            android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            android:textSize="14sp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -83,8 +83,7 @@
                             android:text="@string/main_acti_textview_timekeepping"
                             android:layout_gravity="center_horizontal"
                             android:textSize="14sp"
-                            android:textColor="@color/teal"
-                            android:textStyle="bold"/>
+                            style="@style/text" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -115,10 +114,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/main_acti_textview_absence"
-                            android:textColor="@color/teal"
+                            style="@style/text"
                             android:layout_gravity="center_horizontal"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -149,10 +148,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/main_acti_textview_salary"
-                            android:textColor="@color/teal"
+                            style="@style/text"
                             android:layout_gravity="center_horizontal"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -184,10 +183,10 @@
                             android:layout_height="wrap_content"
                             android:text="@string/main_acti_textview_employee"
                             android:gravity="center"
-                            android:textColor="@color/teal"
+                            style="@style/text"
                             android:layout_gravity="center_horizontal"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                           />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -218,10 +217,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/main_acti_textview_contract"
-                            android:textColor="@color/teal"
+                            style="@style/text"
                             android:layout_gravity="center_horizontal"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -252,10 +251,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/main_acti_textview_forum"
-                            android:textColor="@color/teal"
+                            style="@style/text"
                             android:layout_gravity="center_horizontal"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
@@ -286,10 +285,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/main_acti_textview_policy"
-                            android:textColor="@color/teal"
+                            style="@style/text"
                             android:layout_gravity="center_horizontal"
                             android:textSize="14sp"
-                            android:textStyle="bold"/>
+                            />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>

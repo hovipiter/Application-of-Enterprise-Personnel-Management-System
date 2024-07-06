@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@color/white"
+    style="@style/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -53,20 +53,21 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="@string/project_page_new_task_btn"
-                                android:textColor="@color/black"
-                                android:backgroundTint="@color/silver"
+                                style="@style/button_text"
                                 android:textSize="12sp"
                                 tools:ignore="InefficientWeight" />
                         </LinearLayout>
 
                         <HorizontalScrollView
                             android:layout_width="match_parent"
+                            style="@style/background"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp">
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                style="@style/background"
                                 android:orientation="horizontal">
 
                                 <androidx.cardview.widget.CardView
@@ -87,9 +88,10 @@
                                             android:hint="@string/project_page_number1"
                                             android:contextClickable="false"
                                             android:inputType="none"
+                                            style="@style/text"
                                             android:layout_gravity="center_horizontal"
                                             android:textSize="35sp"
-                                            android:background="@drawable/no_underline_for_edt" />
+                                            />
 
                                         <TextView
                                             android:id="@+id/project_page_all_project"
@@ -97,6 +99,7 @@
                                             android:layout_height="wrap_content"
                                             android:text="@string/project_page_all_project"
                                             android:gravity="center"
+                                            style="@style/text"
                                             android:layout_gravity="center_horizontal"
                                             android:textSize="14sp"
                                             android:background="@drawable/no_underline_for_edt" />
@@ -176,6 +179,7 @@
                             android:id="@+id/project_page_list_project"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            style="@style/text"
                             android:layout_marginTop="10dp"
                             android:layout_marginStart="10dp"
                             android:textSize="20sp"

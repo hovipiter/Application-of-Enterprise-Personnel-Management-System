@@ -25,7 +25,7 @@ import org.json.JSONObject;
 
 public class salary_page extends AppCompatActivity {
     TextView detail, salaryText, otherFeeText, bonusText, sumText;
-    AppCompatImageView imgbtnnotification, imgdrawer, imgback;
+    AppCompatImageView imgbtnnotification, imgback;
     ImageView home, task, person, setting;
     Button searchbtn;
     TextView textViewStartDay, textViewReceiveDay;

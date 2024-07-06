@@ -256,6 +256,52 @@
     <string name="contract_page_phone_number">Phone Number</string>
     <string name="contract_page_name_department_item">Department A</string>
     <string name="contract_page_phone_number_item">0123456273</string>
+    <string name="yourapp">Ứng Dụng Hệ Thống Quản Lý Nhân Sự Doanh Nghiệp</string>
+    <string name="version">Phiên bản 1.0</string>
+    <string name="description_about"><![CDATA[
+<html><body style="text-align: justify; margin-left: 20px; margin-right: 20px;">
+    <b>Tác giả:</b><br>
+    &emsp;Trần Thảo Nhi<br>
+    &emsp;Trần Huỳnh Ngọc<br><br>
+    <b>Giới thiệu ứng dụng:</b><br>
+    &emsp;Ứng dụng "Hệ thống quản lý nhân sự" là một công cụ mạnh mẽ được thiết kế để giúp các tổ chức quản lý hiệu quả hồ sơ nhân viên, thực hiện các thao tác quản lý như đăng ký, cập nhật thông tin nhân viên, theo dõi chấm công, và quản lý các yêu cầu nghỉ phép. Với giao diện thân thiện và tính năng linh hoạt, ứng dụng giúp tối ưu hóa quy trình quản lý nhân sự, từ đó giảm thiểu sự phụ thuộc vào thủ công và tăng cường hiệu quả làm việc của tổ chức.<br><br>
+    <b>Các lưu ý:</b><br>
+    &emsp;- Ứng dụng cần kết nối internet để thực hiện các chức năng liên quan đến cập nhật dữ liệu nhân viên và các yêu cầu từ phía người dùng.<br>
+    &emsp;- Hãy liên hệ với chúng tôi qua địa chỉ email <a href="mailto:support@example.com">support@example.com</a> để được hỗ trợ nhanh nhất khi gặp phải vấn đề kỹ thuật hoặc có góp ý về sản phẩm.
+</body></html>
+]]></string>
+
+
+    <string name="help_content"><![CDATA[
+    <html><body style="text-align: justify; margin-left: 20px; margin-right: 20px;">
+        <b>Trợ giúp và Hỗ trợ</b><br><br>
+
+        <b>Bắt đầu sử dụng:</b><br>
+        &emsp;- Chào mừng bạn đến với ứng dụng của chúng tôi! Hướng dẫn này sẽ giúp bạn bắt đầu sử dụng "Hệ thống quản lý nhân sự" của chúng tôi một cách hiệu quả.<br><br>
+
+        <b>Tổng quan tính năng:</b><br>
+        &emsp;- Quản lý Hồ sơ Nhân viên: Xem, cập nhật và quản lý thông tin nhân viên một cách dễ dàng.<br>
+        &emsp;- Theo dõi Chấm công: Giám sát chấm công và giờ làm việc của nhân viên.<br>
+        &emsp;- Quản lý Đơn xin nghỉ phép: Xử lý các yêu cầu nghỉ phép một cách hiệu quả.<br><br>
+
+        <b>Câu hỏi thường gặp (FAQs):</b><br>
+        &emsp;- <b>Làm thế nào để cập nhật thông tin nhân viên?</b><br>
+        &emsp;&emsp;Để cập nhật thông tin nhân viên, hãy vào hồ sơ nhân viên và nhấn vào nút chỉnh sửa. Thực hiện các thay đổi cần thiết và lưu lại.<br><br>
+
+        &emsp;- <b>Làm thế nào để xem bản ghi chấm công?</b><br>
+        &emsp;&emsp;Bạn có thể xem bản ghi chấm công trong phần Chấm công trong menu ứng dụng. Chọn khoảng thời gian hoặc nhân viên cụ thể để xem chi tiết bản ghi.<br><br>
+
+        &emsp;- <b>Phải làm gì nếu gặp vấn đề kỹ thuật?</b><br>
+        &emsp;&emsp;Nếu bạn gặp bất kỳ vấn đề kỹ thuật nào, vui lòng liên hệ đội ngũ hỗ trợ của chúng tôi qua email <a href="mailto:support@example.com">support@example.com</a>. Chúng tôi sẵn sàng hỗ trợ bạn!<br><br>
+
+        <b>Liên hệ:</b><br>
+        &emsp;- Để được hỗ trợ thêm hoặc gửi phản hồi, vui lòng liên hệ với chúng tôi qua email <a href="mailto:support@example.com">support@example.com</a>.<br><br>
+
+        Cảm ơn bạn đã sử dụng "Hệ thống quản lý nhân sự" của chúng tôi. Chúng tôi hy vọng hướng dẫn này sẽ giúp bạn sử dụng ứng dụng một cách hiệu quả.
+    </body></html>
+]]></string>
+
+
 
     <string-array name="spinner_items">
         <item>Tiếng Việt</item>

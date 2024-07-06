@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
+    style="@style/background"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,7 +52,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:background="@drawable/bottom_gb_for_user_page"
+                    style="@style/profile_component"
                     android:orientation="vertical"
                     android:fadingEdgeLength="10dp">
                     <LinearLayout
@@ -67,7 +67,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/setting_notification_sustem_noti"
-                            android:textColor="@color/black"
+                            style="@style/text"
                             android:layout_gravity="center_vertical"
                             android:textSize="18sp" />
                     </LinearLayout>
@@ -85,7 +85,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/setting_notification_noti_noti_pushup"
-                            android:textColor="@color/black"
+                            style="@style/text"
                             android:layout_gravity="center_vertical"
                             android:textSize="14sp"/>
 
@@ -115,7 +115,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/setting_notification_noti_from_email"
-                            android:textColor="@color/black"
+                            style="@style/text"
                             android:layout_gravity="center_vertical"
                             android:textSize="14sp"/>
                         <View
@@ -142,7 +142,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/setting_notification_effect"
-                            android:textColor="@color/black"
+                            style="@style/text"
                             android:layout_gravity="center_vertical"
                             android:textSize="18sp" />
                     </LinearLayout>
@@ -159,7 +159,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/setting_notification_ring"
-                            android:textColor="@color/black"
+                            style="@style/text"
                             android:layout_gravity="center_vertical"
                             android:textSize="14sp" />
                         <View
@@ -186,7 +186,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/setting_notification_blink"
-                            android:textColor="@color/black"
+                            style="@style/text"
                             android:layout_gravity="center_vertical"
                             android:textSize="14sp" />
                         <View

@@ -1,3 +1,4 @@
+
 package com.example.dacn;
 
 import android.content.Intent;
@@ -78,7 +79,6 @@ public class sign_in extends AppCompatActivity {
                                         //giữ cho trạng thái đăng nhập
                                         editor.putBoolean("isLoggedIn", true); // Set isLoggedIn to true
                                         editor.apply();
-
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                         startActivity(intent);

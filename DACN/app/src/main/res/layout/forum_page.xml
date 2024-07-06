@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    style="@style/background"
     tools:context=".forum_page"
     android:gravity="center">
     <LinearLayout
@@ -46,6 +46,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:layout_weight="1"
                                 android:text="@string/forum_page_title"
+                                style="@style/text"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                             <EditText
@@ -65,7 +66,7 @@
                                 android:layout_height="30dp"
                                 android:layout_weight="1"
                                 android:layout_gravity="center_vertical"
-                                android:src="@drawable/search" />
+                                style="@style/image_find_dark" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -81,8 +82,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:text="@string/forum_page_create_post"
-                                android:backgroundTint="@color/teal"
-                                android:textColor="@color/black"
+                                style="@style/button_text"
                                 android:textSize="18sp" />
                         </LinearLayout>
 

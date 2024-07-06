@@ -255,6 +255,52 @@
     <string name="contract_page_phone_number">Phone Number</string>
     <string name="contract_page_name_department_item">Department A</string>
     <string name="contract_page_phone_number_item">0123456273</string>
+    <string name="yourapp">Application of Enterprise Personnel Management System</string>
+    <string name="version">Verion 1.0</string>
+    <string name="description_about"><![CDATA[
+<html><body style="text-align: justify; margin-left: 20px; margin-right: 20px;">
+    <b>Authors:</b><br>
+    &emsp;Trần Thảo Nhi<br>
+    &emsp;Trần Huỳnh Ngọc<br><br>
+    <b>Application Introduction:</b><br>
+    &emsp;The \"Human Resource Management System\" is a powerful tool designed to help organizations efficiently manage employee records, perform management operations such as registration, update employee information, track attendance, and manage leave requests. With a user-friendly interface and flexible features, the application helps optimize the human resource management process, thereby reducing reliance on manual processes and enhancing organizational efficiency.<br><br>
+    <b>Notes:</b><br>
+    &emsp;- The application requires internet connection to perform functions related to updating employee data and user requests.<br>
+    &emsp;- Please contact us at <a href="mailto:support@example.com">support@example.com</a> for the fastest support when encountering technical issues or providing feedback on the product.
+</body></html>
+]]></string>
+
+    <string name="help_content"><![CDATA[
+    <html><body style="text-align: justify; margin-left: 20px; margin-right: 20px;">
+        <b>Help and Support</b><br><br>
+        <b>Getting Started:</b><br>
+        &emsp;- Welcome to our application! This guide will help you get started with using our "Human Resource Management System" effectively.<br><br>
+
+        <b>Features Overview:</b><br>
+        &emsp;- Manage Employee Records: View, update, and manage employee information easily.<br>
+        &emsp;- Attendance Tracking: Monitor employee attendance and working hours.<br>
+        &emsp;- Leave Management: Handle leave requests efficiently.<br><br>
+
+        <b>Frequently Asked Questions (FAQs):</b><br>
+        &emsp;- <b>How do I update employee information?</b><br>
+        &emsp;&emsp;To update employee information, navigate to the employee profile and click on the edit button. Make the necessary changes and save.<br><br>
+
+        &emsp;- <b>How can I view attendance records?</b><br>
+        &emsp;&emsp;You can view attendance records under the Attendance section in the application menu. Select the date range or specific employee to view detailed records.<br><br>
+
+        &emsp;- <b>What should I do if I encounter technical issues?</b><br>
+        &emsp;&emsp;If you encounter any technical issues, please contact our support team at <a href="mailto:support@example.com">support@example.com</a>. We\'re here to help!<br><br>
+
+        <b>Contact Us:</b><br>
+        &emsp;- For any further assistance or feedback, please reach out to us at <a href="mailto:support@example.com">support@example.com</a>.<br><br>
+
+        Thank you for using our "Human Resource Management System". We hope this guide helps you navigate through the application effectively.
+    </body></html>
+]]></string>
+
+
+
+
 
     <string-array name="spinner_items">
         <item>Vietnamese</item>

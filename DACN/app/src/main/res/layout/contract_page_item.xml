@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="8dp"
+    style="@style/background"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -17,6 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            style="@style/text"
             android:gravity="center"
             android:textSize="14sp"
             android:text="@string/contract_page_name_department_item" />
@@ -27,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            style="@style/text"
             android:text="@string/contract_page_phone_number_item"
             android:textSize="14sp" />
     </LinearLayout>

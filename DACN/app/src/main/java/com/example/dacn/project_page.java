@@ -60,15 +60,6 @@ public class project_page extends AppCompatActivity {
     }
 
     void openObject_project(){
-        // project page
-        newTask.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(project_page.this, project_detail_edit_page.class);
-                startActivity(intent);
-            }
-        });
-
         //navigation bottom bar
         home.setOnClickListener(new View.OnClickListener() {
             @Override

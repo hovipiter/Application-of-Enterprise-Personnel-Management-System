@@ -1,5 +1,6 @@
 package com.example.dacn;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,8 +14,10 @@ import java.util.List;
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.MyViewHolder> {
 
     private List<Notification> listnoti;
-    public NotificationAdapter(List<Notification> listnoti){
+    Context context;
+    public NotificationAdapter(Context context, List<Notification> listnoti){
         this.listnoti = listnoti;
+        this.context = context;
     }
 
     @NonNull

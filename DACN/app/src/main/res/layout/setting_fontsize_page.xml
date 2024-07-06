@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
+    style="@style/background"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,6 +62,7 @@
                             android:fontFamily="sans-serif"
                             android:text="@string/setting_fontsize_selectfont"
                             android:textSize="18sp"
+                            style="@style/text"
                             android:textStyle="bold" />
 
                         <RadioGroup
@@ -80,6 +81,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/radioVerySmall"
                                 android:textSize="12sp"
+                                style="@style/text"
                                 android:fontFamily="sans-serif"/>
                             <RadioButton
                                 android:id="@+id/radioSmall"
@@ -87,6 +89,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/radioSmall"
                                 android:textSize="20sp"
+                                style="@style/text"
                                 android:fontFamily="sans-serif"/>
 
                             <RadioButton
@@ -95,6 +98,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/radioMedium"
                                 android:textSize="28sp"
+                                style="@style/text"
                                 android:fontFamily="sans-serif"/>
 
                             <RadioButton
@@ -103,6 +107,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/radioBig"
                                 android:textSize="36sp"
+                                style="@style/text"
                                 android:fontFamily="sans-serif"/>
                         </RadioGroup>
                     </LinearLayout>

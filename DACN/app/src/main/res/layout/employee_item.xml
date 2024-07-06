@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="8dp"
+    style="@style/background"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,6 +21,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            style="@style/text"
             android:textSize="14sp"
             android:text="@string/employee_page_employee_name" />
 
@@ -29,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/employee_page_department_name"
+            style="@style/text"
             android:textSize="14sp"
             android:gravity="end" />
     </LinearLayout>

@@ -1,11 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/background"
     android:padding="16dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
+        style="@style/background"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -21,21 +23,21 @@
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/teal"
+            style="@style/button_text"
             android:text="@string/chamcong_camera_upload"/>
         <Button
             android:id="@+id/chamcong_camera_button_takepicture_again"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/teal"
+            style="@style/button_text"
             android:text="@string/chamcong_camera_button_takepicture_again"/>
         <Button
             android:id="@+id/chamcong_camera_button_delete"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/teal"
+            style="@style/button_text"
             android:text="@string/chamcong_camera_button_delete"/>
     </LinearLayout>
 

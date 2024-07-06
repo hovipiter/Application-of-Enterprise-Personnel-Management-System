@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    style="@style/background"
     android:layout_height="match_parent">
 
     <ScrollView
@@ -16,14 +16,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:orientation="vertical"
+            style="@style/background"
             android:layout_marginTop="10dp">
 
             <ImageButton
                 android:id="@+id/new_forum_back_imgbtn"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/back_bg"
-                android:backgroundTint="@color/white" />
+                style="@style/image_back_dark"
+                 />
 
             <TextView
                 android:id="@+id/forum_created_title_page"
@@ -51,6 +52,7 @@
                 android:layout_marginVertical="20dp"
                 android:gravity="top"
                 android:hint="@string/forum_created_content"
+                style="@style/text"
                 android:minLines="18"
                 android:padding="10dp"
                 android:textSize="14sp"/>
@@ -59,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/forum_created_post_btn"
-                android:backgroundTint="@color/teal"
+                style="@style/button_text"
                 android:layout_gravity="end"/>
         </LinearLayout>
     </ScrollView>

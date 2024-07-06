@@ -1,5 +1,4 @@
 package com.example.dacn;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -12,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
@@ -21,14 +21,27 @@ public class setting_language_page extends AppCompatActivity {
     LinearLayout linearLayoutFont, linearLayoutFontSize;
     ImageView setting_back_img;
     SharedPreferences sharedPreferences;
+    String staffid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
-        String language = sharedPreferences.getString("My_Lang", "en");
-        setLocale(language);
+        sharedPreferences = getSharedPreferences("Settings", MODE_PRIVATE);
+
+        Intent intent = getIntent();
+        staffid = intent.getStringExtra("staffid");
+
+        // Lấy ngôn ngữ đã lưu từ SharedPreferences
+        String savedLanguage = sharedPreferences.getString("My_Lang_" + staffid, "");
+
+        // Nếu chưa có ngôn ngữ được lưu, mặc định là tiếng Anh
+        if (savedLanguage.isEmpty()) {
+            savedLanguage = "en"; // Hoặc ngôn ngữ mặc định của bạn
+        }
+
+        // Đặt ngôn ngữ theo ngôn ngữ đã lưu
+        setLocale(savedLanguage);
 
         setContentView(R.layout.setting_language_page);
         findviewbyid_setting_language_page();
@@ -45,21 +58,22 @@ public class setting_language_page extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedLanguage = position == 0 ? "vi" : "en";
-                String currentLanguage = sharedPreferences.getString("My_Lang", "en");
+                String currentLanguage = sharedPreferences.getString("My_Lang_" + staffid, "en");
 
                 if (!selectedLanguage.equals(currentLanguage)) {
                     setLocale(selectedLanguage);
                     recreate(); // Khởi động lại Activity để áp dụng ngôn ngữ mới
                 }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
                 // Do nothing
             }
         });
 
-        // Đặt lựa chọn spinner dựa trên ngôn ngữ hiện tại
-        if (language.equals("en")) {
+        // Đặt lựa chọn spinner dựa trên ngôn ngữ đã lưu
+        if (savedLanguage.equals("en")) {
             spinner.setSelection(1);
         } else {
             spinner.setSelection(0);
@@ -102,12 +116,12 @@ public class setting_language_page extends AppCompatActivity {
         Resources resources = getResources();
         Configuration config = resources.getConfiguration();
         DisplayMetrics dm = resources.getDisplayMetrics();
-        config.locale = locale;
+        config.setLocale(locale);
         resources.updateConfiguration(config, dm);
 
-        // Lưu trạng thái ngôn ngữ vào SharedPreferences
+        // Lưu trạng thái ngôn ngữ vào SharedPreferences với staffid
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("My_Lang", lang);
+        editor.putString("My_Lang_" + staffid, lang);
         editor.apply();
     }
 }

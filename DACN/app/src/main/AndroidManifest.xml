@@ -17,7 +17,6 @@
         <activity android:name=".bottom_navigation"/>
         <activity android:name=".project_page"/>
         <activity android:name=".project_detail_page"/>
-        <activity android:name=".project_detail_edit_page"/>
         <activity android:name=".nghiphep_page"/>
         <activity android:name=".contract_page"/>
         <activity android:name=".chamcong_page"/>
@@ -28,7 +27,6 @@
         <activity android:name=".setting_page"/>
         <activity android:name=".setting_language_page"/>
         <activity android:name=".setting_notification_page"/>
-        <activity android:name=".salary_search_page"/>
         <activity android:name=".setting_font_page"/>
         <activity android:name=".setting_fontsize_page"/>
         <activity android:name=".forum_page"
@@ -40,7 +38,9 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".forgot_pass"/>
         <activity android:name=".sign_in"/>
+        <activity android:name=".about_page"/>
         <activity android:name=".chamcong_camera"/>
+        <activity android:name=".help_page"/>
         <activity
             android:name=".splash"
             android:exported="true">

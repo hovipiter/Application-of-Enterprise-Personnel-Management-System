@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white"
+    style="@style/background"
     android:gravity="center">
 
     <ScrollView
@@ -30,6 +30,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textSize="18sp"
+                style="@style/text"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"/>
 
@@ -45,6 +46,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
+                    style="@style/text"
                     android:text="@string/empoyee_page_select_textview"
                     android:textSize="17sp" />
 
@@ -54,6 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ellipsize="end"
+                    style="@style/text"
                     android:layout_gravity="center"
                     android:gravity="center" />
             </LinearLayout>
@@ -69,7 +72,7 @@
                 <TextView
                     android:id="@+id/employee_page_employee_name_title"
                     android:layout_width="0dp"
-
+                    style="@style/text"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="16sp"
@@ -80,6 +83,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    style="@style/text"
                     android:text="@string/employee_page_department_name_title"
                     android:textSize="16sp"
                     android:gravity="end" />

@@ -4,4 +4,58 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
+
+    <!--    night mode-->
+    <!--    bottom navigation-->
+    <!--    background-->
+    <style name="background">
+        <item name="android:background">@color/dark</item>
+    </style>
+    <!--    Button-->
+    <style name="button">
+        <item name="android:backgroundTint">@color/teal</item>
+    </style>
+    <!--    text-->
+    <style name="text">
+        <item name="android:textColor">@color/text_night</item>
+    </style>
+    <!--    text + button-->
+    <style name="button_text">
+        <item name="android:textColor">@color/text_night</item>
+        <item name="android:backgroundTint">@color/teal</item>
+    </style>
+
+    <style name="drawable_assert">
+        <item name="android:background">@drawable/rounded_corner_night</item>
+    </style>
+
+    <style name="drawable_assert_and_text">
+        <item name="android:background">@drawable/rounded_corner_night</item>
+        <item name="android:textColor">@color/text_night</item>
+    </style>
+
+    <style name="image_find_dark">
+        <item name="android:src">@drawable/find_dark</item>
+        <item name="android:backgroundTint">@color/dark</item>
+    </style>
+
+    <style name="background_banner_home">
+        <item name="android:background">@drawable/background_banner_night</item>
+    </style>
+
+    <style name="banner_night">
+        <item name="android:src">@drawable/banner_night</item>
+    </style>
+
+    <style name="image_back_dark">
+        <item name="android:src">@drawable/back_dark</item>
+    </style>
+
+    <style name="profile_component">
+        <item name="android:background">@drawable/bottom_gb_for_user_page_night</item>
+    </style>
+
+
+
 </resources>
