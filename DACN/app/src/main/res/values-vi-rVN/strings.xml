@@ -223,6 +223,7 @@
     <string name="chamcong_page_diemdanh">Điểm danh</string>
     <string name="chamcong_page_location">Vị trí</string>
     <string name="chamcong_page_nhandien">Nhận diện</string>
+    <string name="google_maps_not_available">Google Maps không có sẵn trên thiết bị của bạn.</string>
 
     <string name="dashboard_setting">Cài đặt</string>
     <string name="dashboard_person">Cá nhân</string>
@@ -237,6 +238,9 @@
     <string name="splash_text">Blue wave\n</string>
     <string name="profile_component_status">Trạng thái</string>
     <string name="profile_component_edited_page_Status">Trạng thái</string>
+    <string name="chamcong_page_done">Done</string>
+    <string name="chamcong_camera_upload">Upload Image</string>
+    <string name="nghiphep_page_NumberOfDayOff">Number of day off</string>
 
     <string-array name="spinner_items">
         <item>Tiếng Việt</item>

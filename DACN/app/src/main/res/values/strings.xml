@@ -223,6 +223,7 @@
     <string name="chamcong_page_diemdanh">Attendance</string>
     <string name="chamcong_page_location">Location</string>
     <string name="chamcong_page_nhandien">Recognise</string>
+    <string name="google_maps_not_available">Google Maps is not available on your device.</string>
 
     <string name="dashboard_setting">Settings</string>
     <string name="dashboard_person">Person</string>
@@ -236,6 +237,9 @@
     <string name="splash_text">Blue wave\n</string>
     <string name="profile_component_status">Status</string>
     <string name="profile_component_edited_page_Status">Status</string>
+    <string name="chamcong_page_done">Done</string>
+    <string name="chamcong_camera_upload">Upload Image</string>
+    <string name="nghiphep_page_NumberOfDayOff">Number of day off</string>
 
     <string-array name="spinner_items">
         <item>Vietnamese</item>

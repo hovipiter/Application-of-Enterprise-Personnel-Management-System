@@ -34,18 +34,19 @@
                             android:id="@+id/calendarView"
                             android:layout_width="match_parent"
                             style="@style/CardView.Light"
-                            android:layout_height="310dp" />
+                            android:layout_height="wrap_content" />
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="@drawable/line" />
                         <!-- Nghỉ phép -->
                         <LinearLayout
+                            android:id="@+id/chamcong_page_leaverequest_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal"
                             android:gravity="center_vertical">
                             <TextView
@@ -62,7 +63,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:layout_marginStart="16dp"
-                                android:background="@drawable/apply" />
+                                android:background="@drawable/paper" />
                         </LinearLayout>
 
                         <!-- Điểm danh -->
@@ -71,7 +72,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal"
                             android:gravity="center_vertical">
 
@@ -84,6 +85,7 @@
                                 android:textColor="@color/black"
                                 android:text="@string/chamcong_page_diemdanh" />
                             <Switch
+                                android:id="@+id/chamcong_page_switch"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -91,11 +93,12 @@
                         </LinearLayout>
                         <!-- Vị trí -->
                         <LinearLayout
+                            android:id="@+id/chamcong_page_location_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal"
                             android:gravity="center_vertical">
                             <TextView
@@ -108,18 +111,19 @@
                                 android:textSize="14sp" />
                             <ImageButton
                                 android:id="@+id/Chamcong_location_imgbtn"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_marginStart="16dp"
                                 android:background="@drawable/location" />
                         </LinearLayout>
                         <!-- Nhận diện khuôn mặt -->
                         <LinearLayout
+                            android:id="@+id/chamcong_page_recognise_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal"
                             android:gravity="center_vertical">
                             <TextView
@@ -132,10 +136,28 @@
                                 android:text="@string/chamcong_page_nhandien" />
                             <ImageButton
                                 android:id="@+id/Chamcong_recognize_imgbtn"
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:layout_marginStart="16dp"
                                 android:background="@drawable/camera" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/chamcong_page_done"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:text="@string/chamcong_page_done" />
                         </LinearLayout>
                     </LinearLayout>
                 </ScrollView>

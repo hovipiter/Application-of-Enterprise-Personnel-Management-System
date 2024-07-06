@@ -77,7 +77,6 @@ public class sign_in extends AppCompatActivity {
                                         editor.putString("staffid", staffid);
                                         //giữ cho trạng thái đăng nhập
                                         editor.putBoolean("isLoggedIn", true); // Set isLoggedIn to true
-
                                         editor.apply();
 
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
