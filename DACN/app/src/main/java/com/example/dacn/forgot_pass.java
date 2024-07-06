@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,7 @@ public class forgot_pass extends AppCompatActivity {
     EditText staffid_reset, email_reset;
     Button reset_password;
     ProgressBar progressBar;
+    TextView signin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class forgot_pass extends AppCompatActivity {
         email_reset = findViewById(R.id.forgot_pass_page_email_input);
         reset_password = findViewById(R.id.forgot_pass_page_button_reset);
         progressBar = findViewById(R.id.progress);
+        signin = findViewById(R.id.forgot_pass_page_textview_signin);
 
         reset_password.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +76,14 @@ public class forgot_pass extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "All fields are required", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(forgot_pass.this, sign_in.class);
+                startActivity(intent);
             }
         });
     }

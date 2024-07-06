@@ -3,6 +3,7 @@ package com.example.dacn;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,8 @@ public class nghiphep_page extends AppCompatActivity {
     AppCompatImageView imgbtnnotification, imgdrawer, imgback;
     // navigation bottom
     ImageView home, task, person, setting;
+
+    EditText gettimeoff, numberoftimeoff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

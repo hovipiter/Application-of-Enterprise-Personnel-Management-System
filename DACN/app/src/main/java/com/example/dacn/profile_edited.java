@@ -109,9 +109,38 @@ public class profile_edited extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Failed to fetch data", Toast.LENGTH_SHORT).show();
         }
 
+//        saveButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                HashMap<String, String> postDataParams = new HashMap<>();
+//                postDataParams.put("staffid", staffid);
+//                postDataParams.put("dateofbirth", editTextDateOfBirth.getText().toString());
+//                postDataParams.put("gender", editTextGender.getText().toString());
+//                postDataParams.put("phonenumber", editTextPhoneNumber.getText().toString());
+//                postDataParams.put("address", editTextAddress.getText().toString());
+//                postDataParams.put("idcard", editTextIDCard.getText().toString());
+//                postDataParams.put("nationality", editTextNationality.getText().toString());
+//                postDataParams.put("nation", editTextNation.getText().toString());
+//                postDataParams.put("languages", editTextLanguages.getText().toString());
+//                postDataParams.put("startdate", editTextStartDate.getText().toString());
+//                postDataParams.put("department", editTextDepartment.getText().toString());
+//                postDataParams.put("email", editTextEmail.getText().toString());
+//
+//                sendPostRequest("http://192.168.37.163/usermanagement/update_user_info.php", postDataParams);
+//
+//                Intent intent2 = new Intent(profile_edited.this, profile_page.class);
+//                startActivity(intent2);
+//            }
+//        });
+
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Lấy staffid từ SharedPreferences
+                SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                String staffid = sharedPreferences.getString("staffid", null);
+
+                // Tạo map để lưu dữ liệu post
                 HashMap<String, String> postDataParams = new HashMap<>();
                 postDataParams.put("staffid", staffid);
                 postDataParams.put("dateofbirth", editTextDateOfBirth.getText().toString());
@@ -126,13 +155,35 @@ public class profile_edited extends AppCompatActivity {
                 postDataParams.put("department", editTextDepartment.getText().toString());
                 postDataParams.put("email", editTextEmail.getText().toString());
 
+                // Gọi phương thức gửi yêu cầu POST
                 sendPostRequest("http://192.168.37.163/usermanagement/update_user_info.php", postDataParams);
-
-                Intent intent2 = new Intent(profile_edited.this, profile_page.class);
-                startActivity(intent2);
             }
         });
+
+// Thêm phương thức gửi yêu cầu POST
     }
+//    private void sendPostRequest(String requestURL, HashMap<String, String> postDataParams) {
+//        class SendPostRequestAsync extends AsyncTask<Void, Void, String> {
+//            @Override
+//            protected void onPreExecute() {
+//                super.onPreExecute();
+//            }
+//
+//            @Override
+//            protected String doInBackground(Void... voids) {
+//                // Các xử lý gửi yêu cầu POST như đã cung cấp trong câu hỏi của bạn
+//                // Giữ nguyên phần code trong sendPostRequest() của bạn
+//                // Đảm bảo rằng bạn đã xử lý kết quả trả về và hiển thị thông báo
+//            }
+//            @Override
+//            protected void onPostExecute(String result) {
+//                super.onPostExecute(result);
+//                // Xử lý kết quả trả về và hiển thị thông báo
+//            }
+//        }
+//
+//        new SendPostRequestAsync().execute();
+//    }
 
     private void sendPostRequest(String requestURL, HashMap<String, String> postDataParams) {
         class SendPostRequestAsync extends AsyncTask<Void, Void, String> {
@@ -140,7 +191,6 @@ public class profile_edited extends AppCompatActivity {
             protected void onPreExecute() {
                 super.onPreExecute();
             }
-
             @Override
             protected String doInBackground(Void... voids) {
                 URL url;
@@ -185,8 +235,8 @@ public class profile_edited extends AppCompatActivity {
                 super.onPostExecute(result);
                 Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
                 if (result.equals("Update Success")) {
-                    Intent intent = new Intent(profile_edited.this, profile_page.class);
-                    startActivity(intent);
+                    Intent intent2 = new Intent(profile_edited.this, profile_page.class);
+                    startActivity(intent2);
                 }
             }
         }

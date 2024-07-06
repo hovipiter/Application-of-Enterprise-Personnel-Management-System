@@ -199,17 +199,25 @@ public class chamcong_page extends AppCompatActivity {
     }
 
     private void openGoogleMaps() {
-        // Chỉnh sửa tọa độ vị trí mong muốn
-        String location = "geo:0,0?q=10.762622,106.660172(Ho Chi Minh City)";
-        Uri gmmIntentUri = Uri.parse(location);
+        // Location coordinates for Ho Chi Minh City
+        double latitude = 10.762622;
+        double longitude = 106.660172;
+        String label = "Ho Chi Minh City";
+
+        // Create a URI string with geo coordinates and label
+        String uri = "geo:" + latitude + "," + longitude + "?q=" + latitude + "," + longitude + "(" + label + ")";
+        Uri gmmIntentUri = Uri.parse(uri);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
 
-        String message = getString(R.string.google_maps_not_available);
+        // Check if Google Maps app is available
         if (mapIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(mapIntent);
         } else {
-            Toast.makeText(chamcong_page.this, message, Toast.LENGTH_LONG).show();
+            // If Google Maps app is not available, inform the user
+            Toast.makeText(this, "Google Maps app is not installed", Toast.LENGTH_SHORT).show();
+            // Optionally, handle this case by opening maps in a web browser or suggesting an alternative
         }
     }
+
 }
