@@ -79,7 +79,7 @@
     <string name="salary_search_page_other_number">+3.000.000</string>
     <string name="salary_search_page_sum">Sum</string>
     <string name="salary_search_page_sum_number">+3.000.000</string>
-    <string name="salary_search_page_receive">Đã lãnh vào ngày .../.../...</string>
+    <string name="salary_search_page_receive">Received on date</string>
     <!---salary detail page-->
     <string name="salary_detail_page_time">December, 2023</string>
     <string name="salary_detail_page_salary">Salary</string>
@@ -96,9 +96,9 @@
     <string name="salary_detail_page_other_number">+3.000.000</string>
     <string name="salary_detail_page_sum">Sum</string>
     <string name="salary_detail_page_sum_number">+3.000.000</string>
-    <string name="salary_detail_page_receive">Đã lãnh vào ngày .../.../...</string>
+    <string name="salary_detail_page_receive">Received on date</string>
         <!---salary page -->
-    <string name="salary_page_title">This year</string>
+    <string name="salary_page_title">This month</string>
     <string name="salary_page_salary">Salary</string>
     <string name="salary_page_salary_number">+3.000.000</string>
     <string name="salary_page_award">Bonus</string>
@@ -246,6 +246,10 @@
     <string name="employee_page_employee_name_title">Name</string>
     <string name="employee_page_department_name_title">Department</string>
     <string name="empoyee_page_select_textview">Filter</string>
+    <string name="salary_page_other_fee">Other fee</string>
+    <string name="salary_page_other_fee_number">+0</string>
+    <string name="salary_detail_page_receive_day">dd/mm/yy</string>
+    <string name="salary_detail_page_startday">Salary from date</string>
 
     <string-array name="spinner_items">
         <item>Vietnamese</item>

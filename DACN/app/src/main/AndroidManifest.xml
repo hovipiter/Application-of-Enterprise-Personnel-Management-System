@@ -22,7 +22,8 @@
         <activity android:name=".contract_page"/>
         <activity android:name=".chamcong_page"/>
         <activity android:name=".employee_page"/>
-        <activity android:name=".salary_page"/>
+        <activity android:name=".salary_page"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".salary_detail_page"/>
         <activity android:name=".setting_page"/>
         <activity android:name=".setting_language_page"/>
@@ -30,7 +31,8 @@
         <activity android:name=".salary_search_page"/>
         <activity android:name=".setting_font_page"/>
         <activity android:name=".setting_fontsize_page"/>
-        <activity android:name=".forum_page"/>
+        <activity android:name=".forum_page"
+            android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".new_forum"/>
         <activity android:name=".notification_page"/>
         <activity android:name=".profile_page"/>

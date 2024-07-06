@@ -96,9 +96,9 @@
     <string name="salary_detail_page_other_number">+3.000.000</string>
     <string name="salary_detail_page_sum">Tổng</string>
     <string name="salary_detail_page_sum_number">+3.000.000</string>
-    <string name="salary_detail_page_receive">Đã lãnh vào ngày .../.../...</string>
+    <string name="salary_detail_page_receive">Đã lãnh vào ngày</string>
     <!---salary page -->
-    <string name="salary_page_title">Năm nay</string>
+    <string name="salary_page_title">Tháng hiện tại</string>
     <string name="salary_page_salary">Lương</string>
     <string name="salary_page_salary_number">+3.000.000</string>
     <string name="salary_page_award">Thưởng</string>
@@ -242,11 +242,15 @@
     <string name="chamcong_camera_upload">Tải ảnh lên</string>
     <string name="nghiphep_page_NumberOfDayOff">Số ngày nghỉ</string>
     <string name="chamcong_camera_button_takepicture_again">Chụp lại ảnh</string>
-    <string name="chamcong_camera_button_delete">Delete</string>
-    <string name="employee_page_department_name">Department</string>
-    <string name="employee_page_employee_name_title">Name</string>
-    <string name="employee_page_department_name_title">Department</string>
-    <string name="empoyee_page_select_textview">Filter</string>
+    <string name="chamcong_camera_button_delete">Xóa ảnh</string>
+    <string name="employee_page_department_name">Bộ phận</string>
+    <string name="employee_page_employee_name_title">Tên</string>
+    <string name="employee_page_department_name_title">Bộ phận</string>
+    <string name="empoyee_page_select_textview">Lọc</string>
+    <string name="salary_page_other_fee">Các phí khác</string>
+    <string name="salary_page_other_fee_number">+0</string>
+    <string name="salary_detail_page_receive_day">dd/mm/yy</string>
+    <string name="salary_detail_page_startday">Salary from date</string>
 
     <string-array name="spinner_items">
         <item>Tiếng Việt</item>

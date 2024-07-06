@@ -202,25 +202,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4069348b-b201-447c-9cf0-634cc55deb8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/ApiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/RetrofitClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/UploadResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/EmployeeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/EmployeeAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/chamcong_camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/chamcong_camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/chamcong_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/chamcong_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/employee_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/employee_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/profile_page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/chamcong_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/chamcong_camera.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/chamcong_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/chamcong_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/employee_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/employee_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_detail_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_detail_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/salary_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/employee_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/employee_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/nghiphep_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/nghiphep_page.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_detail_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_detail_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_search_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_search_page.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/salary_page.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/values-vi-rVN/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/values-vi-rVN/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
@@ -428,7 +417,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/employee_page.java</url>
-          <line>126</line>
+          <line>150</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

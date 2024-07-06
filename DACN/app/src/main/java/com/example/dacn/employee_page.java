@@ -28,7 +28,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class employee_page extends AppCompatActivity {
     // thanh dashboard
@@ -53,18 +52,41 @@ public class employee_page extends AppCompatActivity {
 
         employeeRecyclerView.setHasFixedSize(true);
         employeeRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        employeeRecyclerView.setAdapter(employeeAdapter);
 
         employeeList = new ArrayList<>();
+        employeeAdapter = new EmployeeAdapter(employee_page.this, employeeList);
+        employeeRecyclerView.setAdapter(employeeAdapter);
 
-        LoadAllEmployee();
-
+        setupSpinner();
+        LoadAllEmployee("");  // Load all employees initially
     }
-    private void LoadAllEmployee() {
+
+    private void setupSpinner() {
+        // Spinner options
+        String[] departments = {"All", "HR", "IT", "Finance", "Marketing", "Sales", "Operations", "R&D", "Customer Support", "Admin"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, departments);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        departmentSpinner.setAdapter(adapter);
+
+        departmentSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String selectedDepartment = (String) parent.getItemAtPosition(position);
+                LoadAllEmployee(selectedDepartment);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // Do nothing
+            }
+        });
+    }
+
+    private void LoadAllEmployee(String department) {
         // Define the URL for the PHP script
         String url = "http://192.168.37.163/usermanagement/fetch_employee.php";
 
-//  Create the JsonArrayRequest
+        // Create the JsonArrayRequest
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
                 url,
@@ -73,26 +95,28 @@ public class employee_page extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONArray response) {
                         // Handle the JSON response here
+                        employeeList.clear();
                         try {
                             for (int i = 0; i < response.length(); i++) {
                                 JSONObject employee = response.getJSONObject(i);
                                 String username = employee.getString("username");
-                                String department = employee.getString("department");
+                                String departmentName = employee.getString("department");
 
-                                Employee emplyee = new Employee();
-                                emplyee.setName(username);
-                                emplyee.setDepartment(department);
-                                employeeList.add(emplyee);
+                                // Filter based on selected department
+                                if (department.equals("All") || department.equals(departmentName)) {
+                                    Employee emplyee = new Employee();
+                                    emplyee.setName(username);
+                                    emplyee.setDepartment(departmentName);
+                                    employeeList.add(emplyee);
 
-                                // Use the retrieved data (e.g., display it in the UI)
-                                Log.d("EmployeeData", "Username: " + username + ", Department: " + department);
-
+                                    // Use the retrieved data (e.g., display it in the UI)
+                                    Log.d("EmployeeData", "Username: " + username + ", Department: " + departmentName);
+                                }
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        employeeAdapter = new EmployeeAdapter(employee_page.this, employeeList);
-                        employeeRecyclerView.setAdapter(employeeAdapter);
+                        employeeAdapter.notifyDataSetChanged();
                     }
                 },
                 new Response.ErrorListener() {
