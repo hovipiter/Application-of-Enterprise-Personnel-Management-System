@@ -300,7 +300,9 @@
         Cảm ơn bạn đã sử dụng "Hệ thống quản lý nhân sự" của chúng tôi. Chúng tôi hy vọng hướng dẫn này sẽ giúp bạn sử dụng ứng dụng một cách hiệu quả.
     </body></html>
 ]]></string>
-
+    <string name="project_item_start_day">Start day:</string>
+    <string name="project_item_End_day">End day:</string>
+    <string name="progress">"Progress: "</string>
 
 
     <string-array name="spinner_items">

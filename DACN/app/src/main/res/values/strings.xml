@@ -297,9 +297,9 @@
         Thank you for using our "Human Resource Management System". We hope this guide helps you navigate through the application effectively.
     </body></html>
 ]]></string>
-
-
-
+    <string name="project_item_start_day">Start day:</string>
+    <string name="project_item_End_day">End day:</string>
+    <string name="progress">"Progress: "</string>
 
 
     <string-array name="spinner_items">

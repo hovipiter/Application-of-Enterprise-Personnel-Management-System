@@ -39,6 +39,24 @@
                 style="@style/text"
                 android:textSize="16sp"
                 android:layout_weight="10"/>
+            <TextView
+                android:id="@+id/project_page_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/progress"
+                style="@style/text"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/project_page_progress_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="50"
+                style="@style/text"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -59,6 +77,54 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewStartDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+
+                style="@style/text"
+                android:text="@string/project_item_start_day"/>
+
+            <TextView
+                android:id="@+id/textViewgetStartDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginStart="15dp"
+                style="@style/text"
+                android:text="20/10/2023"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewEndDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+
+                style="@style/text"
+                android:text="@string/project_item_End_day"/>
+
+            <TextView
+                android:id="@+id/textViewgetEndDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginStart="15dp"
+                style="@style/text"
+                android:text="20/10/2023"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="end"
             android:orientation="horizontal">
@@ -71,15 +137,6 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="@string/project_page_item_timeleft"/>
-            <TextView
-                android:id="@+id/project_page_item_gettimeleft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:textColor="@color/red"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="@string/project_page_item_gettimeleft"/>
         </LinearLayout>
 
 

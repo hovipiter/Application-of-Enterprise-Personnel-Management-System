@@ -1,5 +1,6 @@
 package com.example.dacn;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,9 +14,11 @@ import java.util.List;
 
 public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.MyViewHolder> {
     private List<Project> projectList;
+    Context context;
 
-    public ProjectAdapter(List<Project> projectList){
+    public ProjectAdapter(Context context, List<Project> projectList){
         this.projectList = projectList;
+        this.context = context;
     }
 
     @NonNull
@@ -29,10 +32,10 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.MyViewHo
     public void onBindViewHolder(@NonNull ProjectAdapter.MyViewHolder holder, int position) {
         Project project = projectList.get(position);
         holder.textviewProjectTitle.setText(project.getProjecttitle());
-        holder.textviewProjectContent.setText(project.getProjectcontent());
-        holder.textviewTimeLeft.setText(project.getTextviewTimeleft());
-        holder.textviewGetTimeLeft.setText(project.getGetTimeleft());
-
+        holder.textviewProjectProgress.setText(project.getProgress());
+        holder.textviewTimeLeft.setText(project.getGetTimeleft());
+        holder.textviewStartDay.setText(project.getStartday());
+        holder.textviewEndDay.setText(project.getEndday());
 
     }
     @Override
@@ -40,18 +43,25 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.MyViewHo
         return projectList.size();
     }
 
+    public void setProjectList(List<Project> projectList) {
+        this.projectList = projectList;
+        notifyDataSetChanged();
+    }
+
     public class MyViewHolder extends RecyclerView.ViewHolder{
         private TextView textviewProjectTitle;
-        private TextView textviewProjectContent;
+        private TextView textviewProjectProgress;
         private TextView textviewTimeLeft;
-        private TextView textviewGetTimeLeft;
+        private TextView textviewStartDay;
+        private TextView textviewEndDay;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             textviewProjectTitle = itemView.findViewById(R.id.project_page_item_title);
-            textviewProjectContent = itemView.findViewById(R.id.project_page_item_content);
+            textviewProjectProgress = itemView.findViewById(R.id.project_page_progress_number);
             textviewTimeLeft = itemView.findViewById(R.id.project_page_item_timeleft);
-            textviewGetTimeLeft = itemView.findViewById(R.id.project_page_item_gettimeleft);
+            textviewStartDay = itemView.findViewById(R.id.textViewgetStartDay);
+            textviewEndDay = itemView.findViewById(R.id.textViewgetEndDay);
         }
     }
 }
