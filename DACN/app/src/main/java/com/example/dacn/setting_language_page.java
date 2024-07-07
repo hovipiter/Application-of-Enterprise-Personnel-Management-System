@@ -81,26 +81,26 @@ public class setting_language_page extends AppCompatActivity {
     }
 
     public void findviewbyid_setting_language_page() {
-        linearLayoutFont = findViewById(R.id.linearFont);
-        linearLayoutFontSize = findViewById(R.id.linearFontSize);
+        //linearLayoutFont = findViewById(R.id.linearFont);
+        //linearLayoutFontSize = findViewById(R.id.linearFontSize);
         setting_back_img = findViewById(R.id.setting_back_img);
     }
 
     public void openObject_setting_language_page() {
-        linearLayoutFont.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(setting_language_page.this, setting_font_page.class);
-                startActivity(intent);
-            }
-        });
-        linearLayoutFontSize.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(setting_language_page.this, setting_fontsize_page.class);
-                startActivity(intent);
-            }
-        });
+//        linearLayoutFont.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(setting_language_page.this, setting_font_page.class);
+//                startActivity(intent);
+//            }
+//        });
+//        linearLayoutFontSize.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(setting_language_page.this, setting_fontsize_page.class);
+//                startActivity(intent);
+//            }
+//        });
         setting_back_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

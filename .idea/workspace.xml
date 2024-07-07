@@ -206,7 +206,6 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/setting_language_page.xml">
         <config>
-          <night>night</night>
           <theme>@style/Theme.DACN</theme>
         </config>
       </layout>
@@ -223,7 +222,6 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/DACN/app/src/main/res/layout/setting_page.xml">
         <config>
-          <night>night</night>
           <theme>@style/Theme.DACN</theme>
         </config>
       </layout>
@@ -246,8 +244,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4069348b-b201-447c-9cf0-634cc55deb8c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/setting_font_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/setting_font_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/values-vi-rVN/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/values-vi-rVN/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/setting_language_page.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/java/com/example/dacn/setting_language_page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACN/app/src/main/res/layout/setting_language_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DACN/app/src/main/res/layout/setting_language_page.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

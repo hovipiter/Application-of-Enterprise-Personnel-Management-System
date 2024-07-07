@@ -99,74 +99,7 @@
                             android:gravity="end"
                             android:layout_height="wrap_content" />
                     </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="25dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/setting_language_font"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/setting_language_font"
-                            style="@style/text"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/linearFont"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginEnd="25dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/setting_language_change_fontstyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/setting_language_change_fontstyle"
-                            style="@style/text"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="14sp" />
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1" />
-                        <ImageView
-                            android:contentDescription="@string/description"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/forward" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/linearFontSize"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginEnd="25dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/setting_language_change_fontsize"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/setting_language_change_fontsize"
-                            style="@style/text"
-                            android:layout_gravity="center_vertical"
-                            android:textSize="14sp" />
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1" />
-                        <ImageView
-                            android:contentDescription="@string/description"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/forward" />
-                    </LinearLayout>
+
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
